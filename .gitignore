@@ -1,0 +1,17 @@
+/*
+!.gitignore
+!CLAUDE.md
+!settings.json
+!keybindings.json
+!agents/
+!commands/
+!skills/
+!hooks/
+!rules/
+!themes/
+!scripts/
+# !notes/  !security/  !ecc/   ← uncomment after checking
+
+!plugins/
+plugins/*
+!plugins/known_marketplaces.json

@@ -1,0 +1,44 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/Users/tpham4/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-11-13T17:02:47.887Z"
+  },
+  "plannotator": {
+    "source": {
+      "source": "github",
+      "repo": "backnotprop/plannotator"
+    },
+    "installLocation": "/Users/tpham4/.claude/plugins/marketplaces/plannotator",
+    "lastUpdated": "2026-07-06T17:56:45.482Z"
+  },
+  "wit-ai": {
+    "source": {
+      "source": "git",
+      "url": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "ref": "feat/advisor-on-bedrock-plugin"
+    },
+    "installLocation": "/Users/tpham4/.claude/plugins/marketplaces/wit-ai",
+    "lastUpdated": "2026-07-08T15:22:27.993Z"
+  },
+  "ssnc-agent-orch": {
+    "source": {
+      "source": "git",
+      "url": "git@code.ssnc.dev:ai/claude-agent-orchestration-plugin.git"
+    },
+    "installLocation": "/Users/tpham4/.claude/plugins/marketplaces/ssnc-agent-orch",
+    "lastUpdated": "2026-11-13T17:22:51.332Z",
+    "autoUpdate": true
+  },
+  "lean-ctx": {
+    "source": {
+      "source": "directory",
+      "path": "/Users/tpham4/.lean-ctx/claude-mod"
+    },
+    "installLocation": "/Users/tpham4/.lean-ctx/claude-mod",
+    "lastUpdated": "2026-10-14T18:12:43.884Z"
+  }
+}

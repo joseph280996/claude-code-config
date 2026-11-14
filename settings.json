@@ -1,0 +1,334 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "cleanupPeriodDays": 30,
+  "enabledPlugins": {
+    "advisor-on-bedrock@wit-ai": true,
+    "agent-orch@ssnc-agent-orch": true,
+    "chrome-devtools-mcp@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "codebase-graph-analyzer@ssnc-agent-orch": true,
+    "commit-commands@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "csharp-lsp@claude-plugins-official": true,
+    "explanatory-output-style@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "lean-ctx@lean-ctx": true,
+    "lua-lsp@claude-plugins-official": true,
+    "microsoft-docs@claude-plugins-official": true,
+    "plannotator@plannotator": true,
+    "playwright@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "remember@claude-plugins-official": true,
+    "sdd-superpowers@anthropic-plugin-directory": true,
+    "security-guidance@claude-plugins-official": true,
+    "sonarqube@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "team-work@ssnc-agent-orch": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "vault-orch@ssnc-agent-orch": true
+  },
+  "env": {},
+  "extraKnownMarketplaces": {
+    "lean-ctx": {
+      "source": {
+        "path": "/Users/tpham4/.lean-ctx/claude-mod",
+        "source": "directory"
+      }
+    },
+    "plannotator": {
+      "source": {
+        "repo": "backnotprop/plannotator",
+        "source": "github"
+      }
+    },
+    "ssnc-agent-orch": {
+      "autoUpdate": true,
+      "source": {
+        "source": "git",
+        "url": "git@code.ssnc.dev:ai/claude-agent-orchestration-plugin.git"
+      }
+    },
+    "wit-ai": {
+      "source": {
+        "ref": "feat/advisor-on-bedrock-plugin",
+        "source": "git",
+        "url": "git@code.ssnc.dev:WIT/wit-ai.git"
+      }
+    }
+  },
+  "feedbackSurveyRate": 0,
+  "hooks": {
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "lean-ctx hook observe",
+            "type": "command"
+          }
+        ],
+        "matcher": ".*"
+      },
+      {
+        "hooks": [
+          {
+            "command": "/opt/homebrew/bin/lean-ctx hook read-dedup",
+            "type": "command"
+          }
+        ],
+        "matcher": "Read"
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "command": "lean-ctx hook observe",
+            "type": "command"
+          }
+        ],
+        "matcher": ".*"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "if": "Bash(git commit*)",
+            "model": "us.anthropic.claude-opus-5",
+            "prompt": "A git commit is about to run. Review the STAGED changes before allowing it. Steps: (1) Run `git diff --cached` to see exactly what will be committed. If the diff is empty, verify with `git status` — if nothing is staged, approve (nothing to review). (2) Review the staged diff for CRITICAL and HIGH issues per the project's code-review standards: hardcoded secrets/credentials/API keys, SQL injection, XSS, path traversal, auth bypasses, data-loss risks, unhandled errors that could crash, and leftover debug/console statements. (3) DECISION: If you find any CRITICAL issue (security vulnerability or data-loss risk), BLOCK the commit and explain each finding with file:line and a concrete fix. If you find only HIGH/MEDIUM/LOW issues, APPROVE but list them as warnings so the developer can decide. Keep the review scoped strictly to the staged diff — do not review unrelated existing code. Hook input: $ARGUMENTS",
+            "statusMessage": "Reviewing staged changes before commit...",
+            "timeout": 300,
+            "type": "agent"
+          }
+        ],
+        "matcher": "Bash"
+      },
+      {
+        "hooks": [
+          {
+            "if": "Bash(git push*)",
+            "model": "us.anthropic.claude-opus-5",
+            "prompt": "A git push is about to run. Review the commits that will be pushed before allowing it. Steps: (1) Determine what will be pushed: run `git rev-parse --abbrev-ref --symbolic-full-name @{u}` to find the upstream; if it succeeds, diff with `git diff @{u}..HEAD`; if there is no upstream (new branch), diff against the default branch with `git diff origin/HEAD..HEAD` (fall back to `git diff origin/main..HEAD` or `git diff origin/master..HEAD`). If the diff is empty, approve (nothing new to review). (2) Review the outgoing diff for CRITICAL and HIGH issues per the project's code-review standards: hardcoded secrets/credentials/API keys, SQL injection, XSS, path traversal, auth bypasses, data-loss risks, unhandled errors, and leftover debug statements. Prefer the review-pr skill's rigor if available. (3) DECISION: If you find any CRITICAL issue, BLOCK the push and explain each finding with file:line and a concrete fix. If you find only HIGH/MEDIUM/LOW issues, APPROVE but list them as warnings. Scope the review to the outgoing commits only. Hook input: $ARGUMENTS",
+            "statusMessage": "Reviewing outgoing commits before push...",
+            "timeout": 300,
+            "type": "agent"
+          }
+        ],
+        "matcher": "Bash"
+      },
+      {
+        "hooks": [
+          {
+            "command": "/opt/homebrew/bin/lean-ctx hook rewrite",
+            "type": "command"
+          }
+        ],
+        "matcher": "Bash|bash"
+      },
+      {
+        "hooks": [
+          {
+            "command": "/opt/homebrew/bin/lean-ctx hook redirect",
+            "type": "command"
+          }
+        ],
+        "matcher": "Read|read|ReadFile|read_file|View|view|Grep|grep|Search|search|ListFiles|list_files|ListDirectory|list_directory|Glob|glob"
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "command": "lean-ctx hook observe",
+            "type": "command"
+          }
+        ],
+        "matcher": ".*"
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "lean-ctx hook observe",
+            "type": "command"
+          }
+        ],
+        "matcher": ".*"
+      },
+      {
+        "hooks": [
+          {
+            "command": "bash -c 'out=$($HOME/.config/opencode/scripts/check-skill-links.sh 2>&1) || { echo \"WARNING: broken skill symlinks detected:\"; echo \"$out\"; }'",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": ".*"
+      },
+      {
+        "hooks": [
+          {
+            "command": "bash '/Users/tpham4/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": "^(startup|resume|clear|compact|fork)$"
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "lean-ctx hook observe",
+            "type": "command"
+          }
+        ],
+        "matcher": ".*"
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "command": "lean-ctx hook observe",
+            "type": "command"
+          }
+        ],
+        "matcher": ".*"
+      }
+    ]
+  },
+  "model": "zai-org/GLM-5.3[1m]",
+  "modelPicker": {
+    "options": [
+      {
+        "description": "Bedrock, 1M context, US (data leaves Private Cloud)",
+        "label": "Claude Haiku 5.5",
+        "model": "us.anthropic.claude-haiku-5-5"
+      },
+      {
+        "description": "Bedrock, 1M context, US (data leaves Private Cloud)",
+        "label": "Claude Sonnet 5.5",
+        "model": "us.anthropic.claude-sonnet-5-5"
+      },
+      {
+        "description": "Bedrock, 1M context, US (data leaves Private Cloud)",
+        "label": "Claude Opus 5.5",
+        "model": "us.anthropic.claude-opus-5-5"
+      },
+      {
+        "description": "Bedrock, 1.05M context, US (data leaves Private Cloud)",
+        "label": "OpenAI GPT-5.5",
+        "model": "openai.gpt-5.5"
+      },
+      {
+        "description": "On-prem, 18B params, 1M context, US & UK",
+        "label": "GLM-5.3-Flash",
+        "model": "zai-org/GLM-5.3-Flash[1m]"
+      },
+      {
+        "description": "On-prem, 40B params, 1M context, US & UK",
+        "label": "GLM-5.3",
+        "model": "zai-org/GLM-5.3[1m]"
+      },
+      {
+        "description": "On-prem, 31B params, 256k context, US & UK",
+        "label": "google/gemma-4-31B-it",
+        "model": "google/gemma-4-31B-it"
+      },
+      {
+        "description": "On-prem, 3.8B params, 256k context, US",
+        "label": "google/gemma-4-26B-A4B-it",
+        "model": "google/gemma-4-26B-A4B-it"
+      }
+    ],
+    "replaceBuiltInOptions": false
+  },
+  "modelSettings": {
+    "zai-org/glm-5.3": {
+      "effortLevel": "medium"
+    }
+  },
+  "permissions": {
+    "allow": [
+      "mcp__lean-ctx__ctx_read",
+      "mcp__lean-ctx__ctx_search",
+      "mcp__lean-ctx__ctx_tree",
+      "mcp__lean-ctx__ctx_overview",
+      "mcp__lean-ctx__ctx_plan",
+      "mcp__lean-ctx__ctx_metrics",
+      "mcp__lean-ctx__ctx_compress",
+      "mcp__lean-ctx__ctx_session",
+      "mcp__lean-ctx__ctx_knowledge",
+      "mcp__lean-ctx__ctx_graph",
+      "mcp__lean-ctx__ctx_retrieve",
+      "mcp__lean-ctx__ctx_provider",
+      "mcp__lean-ctx__ctx_shell",
+      "mcp__lean-ctx__shell",
+      "mcp__lean-ctx__ctx_glob",
+      "mcp__lean-ctx__ctx_compose",
+      "mcp__lean-ctx__ctx_call",
+      "mcp__lean-ctx__ctx_patch",
+      "mcp__lean-ctx__ctx_optimize",
+      "mcp__lean-ctx__ctx_preload",
+      "mcp__lean-ctx__ctx_compare",
+      "mcp__lean-ctx__ctx_analyze",
+      "mcp__lean-ctx__ctx_benchmark",
+      "mcp__lean-ctx__ctx_cache",
+      "mcp__lean-ctx__ctx_discover",
+      "mcp__lean-ctx__ctx_delta",
+      "mcp__lean-ctx__ctx_edit",
+      "mcp__lean-ctx__ctx_dedup",
+      "mcp__lean-ctx__ctx_fill",
+      "mcp__lean-ctx__ctx_intent",
+      "mcp__lean-ctx__ctx_response",
+      "mcp__lean-ctx__ctx_context",
+      "mcp__lean-ctx__ctx_outline",
+      "mcp__lean-ctx__ctx_callgraph",
+      "mcp__lean-ctx__ctx_refactor",
+      "mcp__lean-ctx__ctx_routes",
+      "mcp__lean-ctx__ctx_cost",
+      "mcp__lean-ctx__ctx_heatmap",
+      "mcp__lean-ctx__ctx_gain",
+      "mcp__lean-ctx__ctx_expand",
+      "mcp__lean-ctx__ctx_impact",
+      "mcp__lean-ctx__ctx_architecture",
+      "mcp__lean-ctx__ctx_review",
+      "mcp__lean-ctx__ctx_pack",
+      "mcp__lean-ctx__ctx_index",
+      "mcp__lean-ctx__ctx_artifacts",
+      "mcp__lean-ctx__ctx_smells",
+      "mcp__lean-ctx__ctx_quality",
+      "mcp__lean-ctx__ctx_proof",
+      "mcp__lean-ctx__ctx_verify",
+      "mcp__lean-ctx__ctx_execute",
+      "mcp__lean-ctx__ctx_feedback",
+      "mcp__lean-ctx__ctx_control",
+      "mcp__lean-ctx__ctx_compile",
+      "mcp__lean-ctx__ctx_discover_tools",
+      "mcp__lean-ctx__ctx_radar",
+      "mcp__lean-ctx__ctx_compress_memory",
+      "mcp__lean-ctx__ctx_load_tools",
+      "mcp__lean-ctx__ctx"
+    ],
+    "deny": [
+      "Grep",
+      "Glob"
+    ],
+    "defaultMode": "auto"
+  },
+  "statusLine": {
+    "command": "ccstatusline",
+    "padding": 0,
+    "refreshInterval": 10,
+    "type": "command"
+  },
+  "theme": "custom:kanagawa"
+}
