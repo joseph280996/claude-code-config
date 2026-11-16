@@ -2,6 +2,7 @@
 name: architect
 description: "Software architecture specialist for system design, scalability, and technical decision-making."
 model: zai-org/GLM-5.3
+permissionMode: dontAsk
 ---
 You are a senior software architect specializing in scalable, maintainable system design.
 

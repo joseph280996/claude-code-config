@@ -1,0 +1,341 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-03-19T16:18:14.694Z",
+      "updatedAt": "2026-05-21T17:30:14.666Z"
+    },
+    "git-commit": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/git-commit/SKILL.md",
+      "skillFolderHash": "883a6a7466f55a9cd9f22cf1cce2d9333fc9b998",
+      "installedAt": "2026-04-30T14:19:15Z",
+      "updatedAt": "2026-04-30T14:19:16Z"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "skillFolderHash": "343db72180d05814949fef7d46be96b5c6ee86b3",
+      "installedAt": "2026-03-19T16:18:08.789Z",
+      "updatedAt": "2026-05-21T17:21:46.699Z"
+    },
+    "eclipse-splunk-investigation": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/eclipse-splunk-investigation/SKILL.md",
+      "skillFolderHash": "a987f2365a0f41b05dad1167e4fd1080053a891fdb74b176a536ff21c9d59f98",
+      "installedAt": "2026-05-06T17:02:58.628Z",
+      "updatedAt": "2026-06-03T15:11:14.478Z"
+    },
+    "resiliency-review": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/resiliency-review/SKILL.md",
+      "skillFolderHash": "af027a763b812a2719204836f5cb41b016fa13274fb76c5a98b3ca411bf641c5",
+      "installedAt": "2026-05-21T16:52:37.112Z",
+      "updatedAt": "2026-05-21T16:52:37.112Z"
+    },
+    "code-review": {
+      "source": "git@code.ssnc.dev:eze/ARCH-Nexus.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:eze/ARCH-Nexus.git",
+      "skillPath": "skills/code-review/SKILL.md",
+      "skillFolderHash": "7e52a401122be11da890a164f902d2108f239fbf9755acae842a1fc1098b215c",
+      "installedAt": "2026-05-21T17:19:55.117Z",
+      "updatedAt": "2026-05-21T17:19:55.117Z"
+    },
+    "slack-markdown-formatter": {
+      "source": "git@code.ssnc.dev:eze/ARCH-Nexus.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:eze/ARCH-Nexus.git",
+      "skillPath": ".github/skills/slack-markdown-formatter/SKILL.md",
+      "skillFolderHash": "794d7c7dcbe2495fed49122a3813b006e730868bc7ce89fc1db19b86a5325535",
+      "installedAt": "2026-05-21T17:19:55.122Z",
+      "updatedAt": "2026-05-21T17:19:55.122Z"
+    },
+    "splunk-query": {
+      "source": "git@code.ssnc.dev:eze/ARCH-Nexus.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:eze/ARCH-Nexus.git",
+      "skillPath": "skills/splunk-query/SKILL.md",
+      "skillFolderHash": "841b1f3296359ad017b5dd63d90098b4a92b8dc6d6916bffab24594d26b356f3",
+      "installedAt": "2026-05-21T17:19:55.126Z",
+      "updatedAt": "2026-05-21T17:19:55.126Z"
+    },
+    "unit-test-fixer": {
+      "source": "git@code.ssnc.dev:eze/ARCH-Nexus.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:eze/ARCH-Nexus.git",
+      "skillPath": "skills/unit-test-fixer/SKILL.md",
+      "skillFolderHash": "e3040277f9a92b282eb8c2efd014b38bc202d7ae95c3a41552bc570553cba8ca",
+      "installedAt": "2026-05-21T17:19:55.130Z",
+      "updatedAt": "2026-05-21T17:19:55.130Z"
+    },
+    "resiliency-review-walkthrough": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/resiliency-review-walkthrough/SKILL.md",
+      "skillFolderHash": "68264200f7484828095a5f33926c24cbaf9ce0f89a9b0d4c60a6d00f70f41be6",
+      "installedAt": "2026-06-04T15:52:51.917Z",
+      "updatedAt": "2026-06-04T15:52:51.917Z"
+    },
+    "review-pr": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/review-pr/SKILL.md",
+      "skillFolderHash": "1c4c7992031f6aa440d3656b3a3cb1790bdecfa74fe06092c5f37a653664c122",
+      "installedAt": "2026-07-01T19:56:47.520Z",
+      "updatedAt": "2026-07-01T19:56:47.520Z"
+    },
+    "plannotator-compound": {
+      "source": "backnotprop/plannotator",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/backnotprop/plannotator.git",
+      "skillPath": "apps/skills/extra/plannotator-compound/SKILL.md",
+      "skillFolderHash": "e7cb3bf5836705facedb2f94c6648f269d3f0748",
+      "installedAt": "2026-07-06T17:59:30.482Z",
+      "updatedAt": "2026-07-06T17:59:30.482Z"
+    },
+    "plannotator-setup-goal": {
+      "source": "backnotprop/plannotator",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/backnotprop/plannotator.git",
+      "skillPath": "apps/skills/extra/plannotator-setup-goal/SKILL.md",
+      "skillFolderHash": "29d5d60c2b8a88c1786d7bbdbbfa37e44b64f6a5",
+      "installedAt": "2026-07-06T17:59:30.498Z",
+      "updatedAt": "2026-07-06T17:59:30.498Z"
+    },
+    "plannotator-visual-explainer": {
+      "source": "backnotprop/plannotator",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/backnotprop/plannotator.git",
+      "skillPath": "apps/skills/extra/plannotator-visual-explainer/SKILL.md",
+      "skillFolderHash": "b924766675f2a24c1e0194f0e100160a4ba6fd59",
+      "installedAt": "2026-07-06T17:59:30.508Z",
+      "updatedAt": "2026-07-06T17:59:30.508Z"
+    },
+    "codebase-design": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/codebase-design/SKILL.md",
+      "skillFolderHash": "7347168e8de2de105e2e55f07ecb33d25fd56f44",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.312Z",
+      "updatedAt": "2026-08-05T17:26:36.312Z"
+    },
+    "domain-modeling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/domain-modeling/SKILL.md",
+      "skillFolderHash": "959e63161ff78b4b1cd553b2c0e09e0c68418e5f",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.318Z",
+      "updatedAt": "2026-08-05T17:26:36.318Z"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "skillFolderHash": "c817f6f36acd483294144694a935a76d3e3eb101",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.322Z",
+      "updatedAt": "2026-08-05T17:26:36.322Z"
+    },
+    "grill-with-docs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
+      "skillFolderHash": "5fdcdeedf2d0c73b3ecb1da0a464dd885590f8d6",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.327Z",
+      "updatedAt": "2026-08-05T17:26:36.327Z"
+    },
+    "grilling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/grilling/SKILL.md",
+      "skillFolderHash": "fd99bcbb818f7ef766b83656fb5fac0b58e223ad",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.332Z",
+      "updatedAt": "2026-08-05T17:26:36.332Z"
+    },
+    "handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/handoff/SKILL.md",
+      "skillFolderHash": "184d485ae68a2132893a94239b2b85d253e6152b",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.337Z",
+      "updatedAt": "2026-08-05T17:26:36.337Z"
+    },
+    "research": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/research/SKILL.md",
+      "skillFolderHash": "972a34cd8128b7952b7eb279b06715862db906a7",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.342Z",
+      "updatedAt": "2026-08-05T17:26:36.342Z"
+    },
+    "teach": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/teach/SKILL.md",
+      "skillFolderHash": "15f8c86d39ef834e643d092733ca899b59049067",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.347Z",
+      "updatedAt": "2026-08-05T17:26:36.347Z"
+    },
+    "to-questionnaire": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/to-questionnaire/SKILL.md",
+      "skillFolderHash": "7c4d04fb4d77824d7d98433ee7a8b17dde5efa13",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.352Z",
+      "updatedAt": "2026-08-05T17:26:36.352Z"
+    },
+    "writing-for-agents": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/writing-for-agents/SKILL.md",
+      "skillFolderHash": "8c87c5b64bef2f62b1697384954643ad2c912909",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-05T17:26:36.357Z",
+      "updatedAt": "2026-08-05T17:26:36.357Z"
+    },
+    "herdr": {
+      "source": "herdrdev/herdr",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/herdrdev/herdr.git",
+      "skillPath": "skills/herdr/SKILL.md",
+      "skillFolderHash": "2be0d86d481d1bb29c62e11ef37b78d27d01b478",
+      "installedAt": "2026-10-14T17:09:43.472Z",
+      "updatedAt": "2026-10-14T17:09:43.472Z"
+    },
+    "angularjs-audit": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/angularjs-audit/SKILL.md",
+      "skillFolderHash": "65e16fbee7ee35c89a81b336ddde300fc484a3b3b3765575f500d3b240520d74",
+      "installedAt": "2026-11-12T16:30:47.476Z",
+      "updatedAt": "2026-11-12T16:30:47.476Z"
+    },
+    "angularjs-gotchas": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/angularjs-gotchas/SKILL.md",
+      "skillFolderHash": "a929236867a5d6cc5053ec96dad4ad55d27fec80680b3115a5a985142713edaa",
+      "installedAt": "2026-11-12T16:31:07.375Z",
+      "updatedAt": "2026-11-12T16:31:07.375Z"
+    },
+    "angularjs-full-audit": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/angularjs-full-audit/SKILL.md",
+      "skillFolderHash": "2de3456fe1e9c0bc65aee021c7a936080346c55da3826ad4e39a25745fc4bdbd",
+      "installedAt": "2026-11-12T16:31:31.669Z",
+      "updatedAt": "2026-11-12T16:31:31.669Z"
+    },
+    "c4-architecture-diagrams": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/c4-architecture-diagrams/SKILL.md",
+      "skillFolderHash": "04388062d717016c8f1045299b3a5b261e9f8043bc17d7b3e07018c94b374622",
+      "installedAt": "2026-11-12T16:33:01.268Z",
+      "updatedAt": "2026-11-12T16:33:01.268Z"
+    },
+    "eclipse-db-review": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/eclipse-db-review/SKILL.md",
+      "skillFolderHash": "c4aab08f84dcd6bd66033680e10435163c13ee9d878141600918c702ab5ff69a",
+      "installedAt": "2026-11-12T16:35:14.557Z",
+      "updatedAt": "2026-11-12T16:36:12.396Z"
+    },
+    "eclipse-log-size-analysis": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/eclipse-log-size-analysis/SKILL.md",
+      "skillFolderHash": "7ebbea61e0cf71a8f7738f55238542ed1a7ace6729ad9376722a12d5621238ba",
+      "installedAt": "2026-11-12T16:36:37.795Z",
+      "updatedAt": "2026-11-12T16:36:37.795Z"
+    },
+    "eclipse-test-failure-investigation": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/eclipse-test-failure-investigation/SKILL.md",
+      "skillFolderHash": "d147b283c56efa7e9023a4f2092fe20e46962d109e7db26097ae6fa8e976d0da",
+      "installedAt": "2026-11-12T16:37:07.397Z",
+      "updatedAt": "2026-11-12T16:37:07.397Z"
+    },
+    "sentryone-sql-investigation": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/sentryone-sql-investigation/SKILL.md",
+      "skillFolderHash": "49743fc26eed2efaf0e6a192efdad49d275c9b3e06302f0bbf77aced5cd61d52",
+      "installedAt": "2026-11-12T16:39:38.276Z",
+      "updatedAt": "2026-11-12T16:39:38.276Z"
+    },
+    "pr-session-metadata": {
+      "source": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "sourceType": "git",
+      "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "skillPath": "skills/pr-session-metadata/SKILL.md",
+      "skillFolderHash": "a405fe101bd6412efe6b5c4cc4600ffdc43d72355c847a4c6018093b933dcfaa",
+      "installedAt": "2026-11-12T16:40:12.302Z",
+      "updatedAt": "2026-11-12T16:40:12.302Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "fx",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "opencode",
+    "pi",
+    "warp",
+    "zed",
+    "claude-code"
+  ]
+}

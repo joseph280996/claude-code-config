@@ -1,0 +1,460 @@
+﻿Firm_Id,Firm_Name,Database_Name,Auth_Domain,Auth_Token,Firm_Active,Create_Date__UTC_,DB_Server_Name,ServerName
+1,Eze,EzeTenant,EZE_AWSPROD_1,EZE,True,4/5/2016 12:05:03 AM,IMSAWSPRODL01.PROD.EZESOFTCLOUD.COM.,
+10000,Eze Test,Ims_10000_R32R,EZE_AWSPROD_10000,T78G5,True,5/31/2016 4:36:51 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10002,EZE Software,Ims_10002_E6BG,EZE_AWSPROD_10002,TCKQ3,True,6/1/2016 2:13:28 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10010,DemoProd,Ims_10010_KSGV,EZE_AWSPROD_10010,T20JV,True,7/10/2016 10:33:28 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10013,Deployment,Ims_10013_3804,EZE_AWSPROD_10013,TT1D8,True,11/9/2016 7:40:12 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10016,Jelly Capital,Ims_10016_YT1R,EZE_AWSPROD_10016,TJ27N,True,1/20/2017 8:43:12 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10017,Eze Test2,Ims_10017_HWEM,EZE_AWSPROD_10017,T4QV4,True,3/9/2017 10:35:10 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10024,Russell Implementation Services LLC,Ims_10024_97E9,EZE_AWSPROD_10024,T7F3D,True,3/20/2017 6:48:44 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10028,"Baron Capital, LLC",Ims_10028_XEVD,EZE_AWSPROD_10028,TJ5H9,True,3/20/2017 7:49:17 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10030,Raptor Capital Management LP,Ims_10030_PSP7,EZE_AWSPROD_10030,TQGR7,True,3/29/2017 8:24:46 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10031,Nishkama Capital LLC,Ims_10031_ZA9A,EZE_AWSPROD_10031,TA6BP,True,3/29/2017 8:27:38 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10032,Commissions Demo,Ims_10032_2DE0,EZE_AWSPROD_10032,TWVZ5,True,4/4/2017 5:21:21 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10036,Natare Capital Management LP,Ims_10036_EAT5,EZE_AWSPROD_10036,T7JD1,True,5/2/2017 12:53:14 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10044,Conatus Capital Management LP,Ims_10044_XAMA,EZE_AWSPROD_10044,TWZ8S,True,6/8/2017 9:41:28 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10045,Harrington Global Limited,Ims_10045_QC6B,EZE_AWSPROD_10045,TFMW8,True,6/27/2017 2:12:44 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10053,Insect Riot,Ims_10053_MSD1,EZE_AWSPROD_10053,T51R0,True,8/25/2017 8:14:48 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10054,Insect Riot2,Ims_10054_RT76,EZE_AWSPROD_10054,TQQBF,True,8/29/2017 12:36:09 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10057,Eze Advance,Ims_10057_34MK,EZE_AWSPROD_10057,TFR5W,True,9/26/2017 3:47:20 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10058,Aeroby Market Data,Ims_10058_4DX1,EZE_AWSPROD_10058,T2DSB,True,9/26/2017 4:04:39 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10060,Alpine Peaks Capital LP,Ims_10060_6ERM,EZE_AWSPROD_10060,T7S09,True,9/28/2017 12:41:03 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10064,"Tenzing Global Management, LLC",Ims_10064_7EH6,EZE_AWSPROD_10064,TJFE5,True,11/16/2017 9:52:05 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10072,NonUSSalesCommissions,Ims_10072_ZZXP,EZE_AWSPROD_10072,T7W9X,True,2/7/2018 3:00:39 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10077,SwapLoading,Ims_10077_FJ4Z,EZE_AWSPROD_10077,T58B8,True,4/4/2018 7:49:38 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10078,Brightlight Capital Management LP,Ims_10078_BV80,EZE_AWSPROD_10078,TQXYQ,True,4/6/2018 5:47:25 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10081,"Teca Partners, LP",Ims_10081_V6HG,EZE_AWSPROD_10081,TFYS4,True,5/1/2018 5:23:34 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10085,Navemar Capital Management LP,Ims_10085_STWA,EZE_AWSPROD_10085,TTN70,True,6/1/2018 3:52:38 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10086,"Solstein Capital, LLC",Ims_10086_8HHK,EZE_AWSPROD_10086,TDATF,True,6/8/2018 6:17:31 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10087,Teewinot Capital Advisers LLC,Ims_10087_SKJY,EZE_AWSPROD_10087,T00DY,True,6/14/2018 1:43:52 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10089,Rip Road Capital Partners LP,Ims_10089_JFHX,EZE_AWSPROD_10089,T5BMW,True,7/3/2018 3:53:57 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10092,Akera Capital LLC,Ims_10092_277T,EZE_AWSPROD_10092,TXCF9,True,7/12/2018 7:22:48 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10094,EMEA Sales,Ims_10094_VZW2,EZE_AWSPROD_10094,T2QP7,True,7/30/2018 4:31:39 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10097,Center Lake Capital Management LLC,Ims_10097_84YA,EZE_AWSPROD_10097,TTRGM,True,8/15/2018 5:57:22 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10098,Tabor Asset Management,Ims_10098_BCX7,EZE_AWSPROD_10098,TDE43,True,8/28/2018 2:05:01 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10099,APAC Sales,Ims_10099_6RJ2,EZE_AWSPROD_10099,T03QJ,True,9/11/2018 1:49:50 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10100,Coalescence Partners Investment Management LP,Ims_10100_MZ2F,EZE_AWSPROD_10100,TJSB1,True,9/28/2018 2:22:17 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10101,Warshaw Asset Management LLC,Ims_10101_CQ10,EZE_AWSPROD_10101,T5EYG,True,10/3/2018 4:10:29 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10102,Lionstone Capital Management LLC,Ims_10102_AHNF,EZE_AWSPROD_10102,TR4HZ,True,10/3/2018 4:37:54 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10107,Alexander Road Management LP,Ims_10107_MQXS,EZE_AWSPROD_10107,TNGKA,True,10/8/2018 7:40:04 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10111,"Contego Capital Group, LLC",Ims_10111_BHX6,EZE_AWSPROD_10111,T0716,True,10/18/2018 6:31:45 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10113,Fox Point Capital Management LLC,Ims_10113_JE90,EZE_AWSPROD_10113,T5J84,True,11/29/2018 10:13:03 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10117,"Virtus Shared Services, LLC",Ims_10117_9MD0,EZE_AWSPROD_10117,TG8P0,True,1/18/2019 5:13:26 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10118,Chilton Investment Company,Ims_10118_6NV0,EZE_AWSPROD_10118,T2Y9F,True,1/18/2019 5:23:58 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10121,"GeoSphere Capital Management, LLC",Ims_10121_31DQ,EZE_AWSPROD_10121,TTZ3W,True,3/8/2019 9:11:00 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10122,KG Funds Management LLC,Ims_10122_Q9EY,EZE_AWSPROD_10122,TDMQB,True,3/12/2019 4:33:42 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10127,"Corsair Capital Management, L.P.",Ims_10127_FSK2,EZE_AWSPROD_10127,TB0RP,True,4/4/2019 7:19:41 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10129,BCK Capital Management LP,Ims_10129_QQQD,EZE_AWSPROD_10129,TGBZM,True,4/8/2019 1:19:00 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10131,Arena Holdings Management LLC,Ims_10131_WM6K,EZE_AWSPROD_10131,TNQ6J,True,5/2/2019 10:41:31 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10133,"Greenhaven Road Investment Management, LP",Ims_10133_VX8B,EZE_AWSPROD_10133,TV2DG,True,6/3/2019 2:48:12 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10134,"Gratia Capital, LLC",Ims_10134_4FCE,EZE_AWSPROD_10134,TDR0Z,True,6/4/2019 1:21:08 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10135,MuTaka Capital KK,Ims_10135_D4TG,EZE_AWSPROD_10135,T0DME,True,6/11/2019 5:31:07 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10137,"Ranger Alternative Management, L.P.",Ims_10137_62GX,EZE_AWSPROD_10137,T5RVC,True,6/28/2019 9:20:04 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10138,"Trellus Management Company, LLC",Ims_10138_21J0,EZE_AWSPROD_10138,TREEV,True,7/1/2019 4:44:33 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10139,"The Rock Creek Group, LLC",Ims_10139_ENEV,EZE_AWSPROD_10139,TB42A,True,7/2/2019 7:56:47 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10140,Duro Capital (Singapore) Advisors Pte. Ltd,Ims_10140_JEE2,EZE_AWSPROD_10140,TXSNS,True,7/3/2019 8:00:28 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10141,LAV International Inc,Ims_10141_NPBZ,EZE_AWSPROD_10141,TGF98,True,7/8/2019 6:01:24 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10142,Gobi Capital LLC,Ims_10142_RE34,EZE_AWSPROD_10142,T34WQ,True,7/8/2019 6:15:22 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10143,QQQ Capital Management Pte. Ltd,Ims_10143_7X5Z,EZE_AWSPROD_10143,TNTG6,True,7/9/2019 3:01:50 AM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10145,"Cannon Global Investment Management,LLC",Ims_10145_PHDZ,EZE_AWSPROD_10145,TV5Q4,True,7/19/2019 6:28:25 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10148,"Mass Ave Global, Inc.",Ims_10148_546Z,EZE_AWSPROD_10148,TK6HH,True,7/25/2019 9:17:52 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10149,Panview Capital Hong Kong Limited,Ims_10149_0HXG,EZE_AWSPROD_10149,T5W50,True,8/1/2019 6:41:05 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10150,Luxence Capital Limited,Ims_10150_BVNM,EZE_AWSPROD_10150,TRHRF,True,8/2/2019 8:35:52 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10151,Voss Capital LLC,Ims_10151_ZCSE,EZE_AWSPROD_10151,TB7BY,True,8/9/2019 7:11:51 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10153,TriVista Capital Inc.,Ims_10153_ZYAB,EZE_AWSPROD_10153,TGJJW,True,8/19/2019 6:02:49 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10154,"Tontine Associates, LLC",Ims_10154_K2CR,EZE_AWSPROD_10154,T386B,True,9/6/2019 6:16:30 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10155,Belerion Capital Group Ltd,Ims_10155_PSMC,EZE_AWSPROD_10155,TNXST,True,9/16/2019 4:03:54 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10158,"Elm Ridge Management, LLC",Ims_10158_DZE2,EZE_AWSPROD_10158,TDYM7,True,10/4/2019 5:52:45 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10161,"Sailingstone Capital Partners, LLC",Ims_10161_4RCE,EZE_AWSPROD_10161,T5ZEM,True,10/9/2019 9:31:01 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10162,"Miura Global Management, LLC",Ims_10162_YQFY,EZE_AWSPROD_10162,TRN23,True,10/10/2019 7:34:39 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10164,Amansa Capital Pte. Ltd,Ims_10164_JHQ9,EZE_AWSPROD_10164,TY091,True,10/14/2019 7:25:22 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10167,TIH Investment Management Pte Ltd,Ims_10167_KH1A,EZE_AWSPROD_10167,TP13E,True,10/30/2019 3:13:13 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10168,Oelschlager Investments LLC,Ims_10168_9Z7X,EZE_AWSPROD_10168,T8PPX,True,10/31/2019 9:32:17 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10169,Blue Creek Capital Management Limited,Ims_10169_1FV2,EZE_AWSPROD_10169,TVCAC,True,11/5/2019 7:00:02 AM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10170,Dawn Capital Limited,Ims_10170_7RPQ,EZE_AWSPROD_10170,TE1XV,True,11/6/2019 11:43:18 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10171,VARECS Partners Limited,Ims_10171_XHE5,EZE_AWSPROD_10171,T0QHA,True,11/11/2019 9:28:58 AM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10173,APAC HongKong Test 01,Ims_10173_TCSS,EZE_AWSPROD_10173,T62R8,True,11/15/2019 2:02:56 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10175,Habrok Capital Management LLP,Ims_10175_ACF8,EZE_AWSPROD_10175,TBDZ6,True,11/18/2019 2:56:34 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10176,Arborvitae Capital Pte. Ltd.,Ims_10176_KQST,EZE_AWSPROD_10176,TY3JN,True,11/21/2019 2:09:35 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10177,"Alta Park Capital, LP",Ims_10177_FBV1,EZE_AWSPROD_10177,TGS64,True,11/25/2019 7:45:09 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10179,Farringdon Capital Management,Ims_10179_75DK,EZE_AWSPROD_10179,TP4D2,True,12/3/2019 11:52:03 AM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10181,F & F MANAGEMENT PTY. LTD.,Ims_10181_0E6P,EZE_AWSPROD_10181,TVFM0,True,12/16/2019 4:42:42 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10184,1060 Capital LLC,Ims_10184_R4JE,EZE_AWSPROD_10184,TKGED,True,1/3/2020 11:44:26 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10185,Alight Capital Management LP,Ims_10185_2FPT,EZE_AWSPROD_10185,T661W,True,1/9/2020 4:03:40 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10189,Actelligent Capital Management Limited,Ims_10189_GTF0,EZE_AWSPROD_10189,TGWFR,True,1/16/2020 6:13:47 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10193,Sourcerock Group LLC ,Ims_10193_N2XP,EZE_AWSPROD_10193,TVJXM,True,1/24/2020 2:41:35 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10198,Hill City Capital LP,Ims_10198_B8V1,EZE_AWSPROD_10198,TRYYZ,True,2/7/2020 2:17:48 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10200,Sage Partners Limited,Ims_10200_A07R,EZE_AWSPROD_10200,TYA5X,True,2/14/2020 6:11:58 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10201,S2 Technology LLC,Ims_10201_5J44,EZE_AWSPROD_10201,TGZSC,True,2/25/2020 1:17:22 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10203,Feoh Investments UK LLP,Ims_10203_W3FK,EZE_AWSPROD_10203,TPB0A,True,3/9/2020 5:26:29 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10204,Trybe Capital Management LP,Ims_10204_W6A0,EZE_AWSPROD_10204,T90KS,True,3/9/2020 9:56:22 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10206,Atlas Square Partners LLP,Ims_10206_50RD,EZE_AWSPROD_10206,TEBTQ,True,3/16/2020 3:06:45 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10207,Aslead Capital Pte. Ltd.,Ims_10207_VYK1,EZE_AWSPROD_10207,T11E6,True,3/25/2020 4:32:23 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10208,Shukr Investments LLC,Ims_10208_EWAR,EZE_AWSPROD_10208,TKQ1N,True,3/25/2020 1:25:28 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10209,"Medina Singh Partners, LLC",Ims_10209_N5NS,EZE_AWSPROD_10209,T6CN4,True,3/26/2020 2:04:10 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10212,Long Path Partners LLC,Ims_10212_A69W,EZE_AWSPROD_10212,TYDFH,True,4/3/2020 5:32:36 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10213,"Credit Capital Investments, LLC on behalf of Teak Hill Master Fund LP",Ims_10213_Z0HB,EZE_AWSPROD_10213,TH330,True,4/7/2020 2:57:52 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10215,VisionGain Capital Limited,Ims_10215_XF1N,EZE_AWSPROD_10215,TPE9Y,True,4/20/2020 9:37:32 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10218,"Roubaix Capital, LLC",Ims_10218_12AJ,EZE_AWSPROD_10218,TEF4B,True,5/7/2020 3:26:09 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10221,Jam Capital,Ims_10221_4J4P,EZE_AWSPROD_10221,T6FYR,True,5/12/2020 3:29:49 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10222,Shadowfall Capital & Research LLP,Ims_10222_32M4,EZE_AWSPROD_10222,TS5J7,True,5/14/2020 3:43:31 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10223,EMEA Sales POC,Ims_10223_V7YP,EZE_AWSPROD_10223,TBV5P,True,5/19/2020 2:09:00 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10224,Lynx1 Capital Management LP,Ims_10224_QJBG,EZE_AWSPROD_10224,TYGS5,True,5/26/2020 6:35:31 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10225,NOAM Sales Demo,Ims_10225_G5J9,EZE_AWSPROD_10225,TH6CM,True,6/1/2020 9:35:21 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10226,QVIDTVM Inc.,Ims_10226_52MW,EZE_AWSPROD_10226,T3W03,True,6/15/2020 4:01:40 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10227,Zephyr Waterfield Funds Ltd.,Ims_10227_R2KX,EZE_AWSPROD_10227,TPHKJ,True,6/16/2020 12:57:33 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10230,Totus Capital Pty Ltd,Ims_10230_Z92R,EZE_AWSPROD_10230,TEJDZ,True,7/3/2020 6:02:54 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10233,Triata Capital Limited,Ims_10233_XPTE,EZE_AWSPROD_10233,T6K8C,True,7/3/2020 6:19:41 AM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10234,"SilverArc Capital Management, LLC",Ims_10234_GQC5,EZE_AWSPROD_10234,TS8VV,True,7/7/2020 2:27:21 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10236,"Monimus Capital Management, LP",Ims_10236_2KJ1,EZE_AWSPROD_10236,TYM2S,True,7/13/2020 3:37:34 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10237,Archon Capital Management LLC,Ims_10237_BH9S,EZE_AWSPROD_10237,TH9P8,True,7/13/2020 7:40:50 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10238,Fernbridge Capital Management LLC,Ims_10238_CW9X,EZE_AWSPROD_10238,T3Z9Q,True,7/15/2020 2:53:56 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10240,Water Street Capital Inc.,Ims_10240_6N5Z,EZE_AWSPROD_10240,T9AGN,True,7/22/2020 3:06:10 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10242,"Sante Capital Management, LP",Ims_10242_6KJH,EZE_AWSPROD_10242,TENQK,True,8/4/2020 3:10:39 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10245,Lokoya Capital Management LP,Ims_10245_0FXD,EZE_AWSPROD_10245,T6PJ0,True,8/28/2020 11:57:43 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10248,Fairmount Funds Management LLC,Ims_10248_4N0K,EZE_AWSPROD_10248,TYQCD,True,9/14/2020 1:19:10 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10249,"RGM Capital, LLC",Ims_10249_N3E0,EZE_AWSPROD_10249,THCZW,True,9/21/2020 5:12:44 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10250,Fairlight Asset Management,Ims_10250_MH28,EZE_AWSPROD_10250,T42KB,True,9/29/2020 8:30:31 AM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10251,Frazis Capital Partners Pty Ltd,Ims_10251_7BGA,EZE_AWSPROD_10251,TPR6T,True,10/5/2020 4:55:29 AM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10253,ThornTree Capital Partners LP,Ims_10253_Y810,EZE_AWSPROD_10253,TW3DR,True,10/20/2020 2:45:01 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10254,Mobile App Testing,Ims_10254_TBVB,EZE_AWSPROD_10254,TES17,True,10/20/2020 3:59:52 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10255,Ardmore Road Asset Management LP,Ims_10255_07FW,EZE_AWSPROD_10255,T1EMP,True,10/22/2020 6:48:56 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10256,Metavasi Capital LP,Ims_10256_ACSC,EZE_AWSPROD_10256,TM485,True,10/23/2020 3:46:31 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10259,"Investment Lab Co., Ltd.",Ims_10259_0SK2,EZE_AWSPROD_10259,TC52J,True,11/4/2020 6:27:03 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10260,Genavest Capital Limited,Ims_10260_GRTT,EZE_AWSPROD_10260,TYTP1,True,11/4/2020 3:28:32 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10261,North Reef Capital Management LP,Ims_10261_2PTA,EZE_AWSPROD_10261,THG9G,True,11/5/2020 5:05:33 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10262,LHC Capital Pty Limited,Ims_10262_R7QM,EZE_AWSPROD_10262,T45WZ,True,11/10/2020 8:15:32 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10264,Antipodean Advisors LLC,Ims_10264_BCH3,EZE_AWSPROD_10264,T9H3X,True,11/13/2020 3:11:40 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10265,"Afton Capital Management, LLC",Ims_10265_YRKF,EZE_AWSPROD_10265,TW6QC,True,11/19/2020 4:09:02 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10266,EURASIA UAT,Ims_10266_APPB,EZE_AWSPROD_10266,TEWAV,True,11/20/2020 5:35:12 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10268,"Certa Capital, LLC",Ims_10268_A3HJ,EZE_AWSPROD_10268,TM7HS,True,11/20/2020 8:22:22 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10269,Uliel Dreyfuss Nathan Capital Investment Management LTD,Ims_10269_MHM5,EZE_AWSPROD_10269,T6X58,True,12/1/2020 2:14:40 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10271,Voyager Global Management LP,Ims_10271_QF4R,EZE_AWSPROD_10271,TC8C6,True,12/11/2020 6:45:08 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10272,Ascender Capital Limited,Ims_10272_JKKZ,EZE_AWSPROD_10272,TYXZN,True,12/16/2020 5:03:34 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10274,Montgomery Investment Management Pty. Ltd,Ims_10274_91DE,EZE_AWSPROD_10274,T496K,True,1/5/2021 3:33:50 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10275,Actus Ray Partners,Ims_10275_MK0J,EZE_AWSPROD_10275,TPYT2,True,1/5/2021 9:30:04 AM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10278,Seven Grand Managers LLC,Ims_10278_AQ88,EZE_AWSPROD_10278,TEZMF,True,1/8/2021 1:20:04 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10280,Centerstone Investors LLC,Ims_10280_QC47,EZE_AWSPROD_10280,TMAVD,True,1/12/2021 6:54:49 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10281,Cobia Capital Management LP,Ims_10281_42JD,EZE_AWSPROD_10281,T70EW,True,1/13/2021 8:59:30 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10286,Enhalus Capital,Ims_10286_0E68,EZE_AWSPROD_10286,T4CG7,True,2/1/2021 3:57:48 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10287,Ardinall Investment Management LP,Ims_10287_6Q2A,EZE_AWSPROD_10287,TQ23P,True,2/2/2021 3:59:48 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10288,Darlington Partners LP,Ims_10288_TDMF,EZE_AWSPROD_10288,T9QQ5,True,2/3/2021 12:00:53 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10289,Stony Point Capital,Ims_10289_8MGH,EZE_AWSPROD_10289,TWDAM,True,2/3/2021 10:24:04 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10290,Octo Rivers Asset Management,Ims_10290_4VJC,EZE_AWSPROD_10290,TF2Y3,True,2/8/2021 11:34:05 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10291,Invenomic Capital Management LP,Ims_10291_2160,EZE_AWSPROD_10291,T1RHJ,True,2/9/2021 8:26:22 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10293,"Arrow Capital Management, LLC",Ims_10293_E3J8,EZE_AWSPROD_10293,T73RG,True,2/24/2021 6:48:52 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10296,Actus Ray Partners Test,Ims_10296_D1F7,EZE_AWSPROD_10296,TZ4JX,True,3/2/2021 3:13:10 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10298,Kikaku Management Limited,Ims_10298_MKGB,EZE_AWSPROD_10298,T4FSV,True,3/2/2021 3:17:05 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10299,Test Mutaka UAT,Ims_10299_V4BX,EZE_AWSPROD_10299,TQ5DA,True,3/12/2021 7:24:39 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10302,Turiya Advisors Asia Limited,Ims_10302_EMBP,EZE_AWSPROD_10302,TF67Q,True,3/30/2021 6:00:24 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10303,Profeta Investments Pty Ltd,Ims_10303_TZMS,EZE_AWSPROD_10303,T1VV6,True,3/31/2021 3:02:51 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10304,"Blue Grotto Capital, LLC",Ims_10304_MTNZ,EZE_AWSPROD_10304,TMHEN,True,4/1/2021 2:30:55 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10305,Commodore Capital LP,Ims_10305_R36A,EZE_AWSPROD_10305,T7724,True,4/5/2021 5:17:14 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10307,Stillbrook Capital Limited,Ims_10307_ZY1B,EZE_AWSPROD_10307,TCJ92,True,4/21/2021 4:36:38 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10309,Velan Capital Investment Management LP,Ims_10309_DJDJ,EZE_AWSPROD_10309,THXG0,True,4/26/2021 7:35:57 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10310,Arvin Capital Management LP,Ims_10310_KGHH,EZE_AWSPROD_10310,T4K3F,True,4/30/2021 3:58:18 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10312,"Azarias Capital Management, LP",Ims_10312_XS5N,EZE_AWSPROD_10312,T9YAD,True,5/3/2021 9:38:36 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10314,Foresight Global Investors Inc.,Ims_10314_PABP,EZE_AWSPROD_10314,TF9HB,True,5/5/2021 1:03:27 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10315,Clearline Capital L.P.,Ims_10315_39Y5,EZE_AWSPROD_10315,T1Z4T,True,5/6/2021 1:42:32 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10318,"In Depth Partners, LLC",Ims_10318_WQFD,EZE_AWSPROD_10318,TSZZ7,True,5/25/2021 3:22:06 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10319,"TFJ Management, LLC",Ims_10319_YJMC,EZE_AWSPROD_10319,TCNJP,True,5/26/2021 7:20:46 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10321,Boone Capital Management LLC,Ims_10321_WDHX,EZE_AWSPROD_10321,TJ0SM,True,6/9/2021 5:56:04 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10325,NPJ Asset Management LLP,Ims_10325_3JYV,EZE_AWSPROD_10325,TWQ7G,True,6/15/2021 11:54:40 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10328,Lake Bleu Capital (Hong Kong) Limited,Ims_10328_0EFB,EZE_AWSPROD_10328,TMR1X,True,6/17/2021 8:42:09 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10331,PM Capital Limited,Ims_10331_R7X5,EZE_AWSPROD_10331,TCRWA,True,6/28/2021 3:59:22 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10332,LMCG Investments LLC (d/b/a Leeward) ,Ims_10332_MPYW,EZE_AWSPROD_10332,TZEFS,True,6/30/2021 3:23:21 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10333,Anabranch Capital Management LP,Ims_10333_5VY7,EZE_AWSPROD_10333,TJ438,True,7/2/2021 5:24:14 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10334,Quant Bio,Ims_10334_K9SD,EZE_AWSPROD_10334,T4SPQ,True,7/8/2021 2:30:31 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10338,Selwood Asset Management LLP,Ims_10338_VQA4,EZE_AWSPROD_10338,TFG4K,True,8/6/2021 6:31:31 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10340,Square Peg Capital,Ims_10340_GZNR,EZE_AWSPROD_10340,TMVBH,True,8/27/2021 4:05:31 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10341,GordonMD Global Investments LLC,Ims_10341_29X4,EZE_AWSPROD_10341,T7GZ0,True,8/27/2021 3:43:44 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10342,"Saturn V Capital, LP",Ims_10342_ECH9,EZE_AWSPROD_10342,TT6JF,True,8/30/2021 4:08:49 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10343,Greentrail Partners LLP,Ims_10343_MA1R,EZE_AWSPROD_10343,TCW5Y,True,9/3/2021 4:11:31 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10344,Windward Management LP,Ims_10344_EJ4D,EZE_AWSPROD_10344,TZHSD,True,9/15/2021 3:42:33 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10345,Anavon Capital LLP,Ims_10345_AK42,EZE_AWSPROD_10345,TJ7CW,True,9/16/2021 10:18:37 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10350,"Ararat Capital Management, LP",Ims_10350_GJQ1,EZE_AWSPROD_10350,TFKE7,True,10/5/2021 8:34:23 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10351,Mercator Management (USA) LP,Ims_10351_F4ZX,EZE_AWSPROD_10351,T291P,True,10/6/2021 5:15:52 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10352,Alceon Liquid Strategies Pty Limited,Ims_10352_AFS0,EZE_AWSPROD_10352,TMYN5,True,10/14/2021 6:17:19 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10353,Katrin Finance Pty Limited,Ims_10353_W1NJ,EZE_AWSPROD_10353,T7M8M,True,10/20/2021 12:19:01 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10354,Eze Marketplace,Ims_10354_G2X3,EZE_AWSPROD_10354,TT9W3,True,10/25/2021 6:02:00 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10356,"North Peak Capital Management, LLC",Ims_10356_0MYH,EZE_AWSPROD_10356,TZN31,True,11/4/2021 2:32:50 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10360,"Caligan Partners, L.P.",Ims_10360_YXJP,EZE_AWSPROD_10360,TABGX,True,11/15/2021 10:47:46 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10362,"Worm Capital, LLC",Ims_10362_J468,EZE_AWSPROD_10362,TFPQV,True,11/16/2021 4:46:39 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10363,"Nokomis Capital, LLC",Ims_10363_AVGF,EZE_AWSPROD_10363,T2CBA,True,11/18/2021 1:23:19 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10364,"Spruce House Investment Management, LLC",Ims_10364_FZ10,EZE_AWSPROD_10364,TN1YS,True,12/8/2021 3:04:40 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10370,"I3 Investment Partners, LLC",Ims_10370_3KQ8,EZE_AWSPROD_10370,T53KK,True,12/13/2021 11:20:43 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10371,GCQ Funds Management Pty Ltd,Ims_10371_8CNC,EZE_AWSPROD_10371,TQS72,True,12/21/2021 6:15:59 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10372,Test Saltoro Capital,Ims_10372_FW8J,EZE_AWSPROD_10372,TAETH,True,12/28/2021 7:52:49 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10373,Back Nine Partners LP,Ims_10373_QZT7,EZE_AWSPROD_10373,TX4E0,True,12/30/2021 3:58:05 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10374,The London Company of Virginia,Ims_10374_Z2Q3,EZE_AWSPROD_10374,TFT1F,True,12/31/2021 6:56:08 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10375,"Aleena Capital Management, LP",Ims_10375_J2E5,EZE_AWSPROD_10375,T2FMY,True,1/3/2022 9:05:13 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10377,H Squared Management LP,Ims_10377_GBYV,EZE_AWSPROD_10377,T7TVW,True,1/4/2022 1:44:14 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10379,Cypress Point Investment Management LP,Ims_10379_ZX9N,EZE_AWSPROD_10379,TD62T,True,1/6/2022 6:41:09 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10380,"Granahan Investment Management, Inc.",Ims_10380_T76X,EZE_AWSPROD_10380,TZVP9,True,1/10/2022 7:16:28 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10381,Aregence Capital Management Pte. Ltd.,Ims_10381_199X,EZE_AWSPROD_10381,TJH9R,True,1/25/2022 7:48:37 AM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10383,"Digital Colony Management, LLC",Ims_10383_A9D5,EZE_AWSPROD_10383,TQWGP,True,1/31/2022 5:22:36 PM,EclipseProdL06.PROD.ezesoftcloud.com.,AEPROD01SQL09
+10385,"Cadian Capital Management, LP",Ims_10385_E17T,EZE_AWSPROD_10385,TX7QM,True,2/3/2022 2:59:48 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10386,Prism Global Management LLC,Ims_10386_C8NE,EZE_AWSPROD_10386,TFXB3,True,2/3/2022 8:55:04 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10389,Hallstatt Advisors LP,Ims_10389_V7GF,EZE_AWSPROD_10389,T7Y5G,True,2/25/2022 7:30:00 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10390,Tall Trees Capital,Ims_10390_BY4A,EZE_AWSPROD_10390,TTKRZ,True,2/28/2022 4:36:46 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10392,"INCA Investments, LLC",Ims_10392_PWZ0,EZE_AWSPROD_10392,TZYZX,True,3/14/2022 6:13:41 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10394,GlassBead Strategic Partners Fund LP,Ims_10394_A5C0,EZE_AWSPROD_10394,T5A6V,True,4/4/2022 2:27:57 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10396,"Acuta Capital Partners, LLC",Ims_10396_PYYT,EZE_AWSPROD_10396,TANDS,True,4/8/2022 5:43:42 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10397,Eastbay Asset Management LLC,Ims_10397_4KGN,EZE_AWSPROD_10397,TXB18,True,4/19/2022 6:33:47 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10398,"Vision One Management Partners, LP",Ims_10398_4898,EZE_AWSPROD_10398,TG0MQ,True,5/3/2022 6:11:50 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10399,Monaco Asset Management S.A.M.,Ims_10399_WDVY,EZE_AWSPROD_10399,T2P86,True,5/16/2022 10:44:42 AM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10401,Lloyd Harbor Capital Management LLC,Ims_10401_XZ5M,EZE_AWSPROD_10401,T81F4,True,6/1/2022 9:10:30 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10404,"Gridiron Partners, LLC",Ims_10404_1PV3,EZE_AWSPROD_10404,T029H,True,6/9/2022 5:54:40 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10406,Bardin Hill Investment Partners LP,Ims_10406_QZ34,EZE_AWSPROD_10406,T5DGF,True,6/30/2022 6:14:51 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10409,"Applied Finance Capital Management, LLC",Ims_10409_B2QX,EZE_AWSPROD_10409,TXEAW,True,7/5/2022 8:05:09 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10410,Osiris Global Investors LP,Ims_10410_9K5F,EZE_AWSPROD_10410,TG3YB,True,7/5/2022 8:26:27 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10411,Fourth Sail Capital LP,Ims_10411_ZBT0,EZE_AWSPROD_10411,T2SHT,True,7/7/2022 12:54:14 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10412,"Healthcor Management, L.P.",Ims_10412_77MG,EZE_AWSPROD_10412,TNF59,True,7/14/2022 1:32:38 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10413,"Dardanelles Capital, LP",Ims_10413_XPHK,EZE_AWSPROD_10413,T84RR,True,7/14/2022 8:25:30 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10414,"Light Street Capital Management, LLC",Ims_10414_XSD9,EZE_AWSPROD_10414,TTTC7,True,7/19/2022 8:15:29 PM,EclipseProdL07.PROD.ezesoftcloud.com.,AEPROD01SQL10
+10418,Impala Asset Management LLC,Ims_10418_32M8,EZE_AWSPROD_10418,T5GT3,True,8/24/2022 1:18:34 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10419,"Wynnefield Capital, Inc.",Ims_10419_8WHW,EZE_AWSPROD_10419,TR6DJ,True,8/31/2022 5:03:01 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10421,"Walnut Level Capital, LLC",Ims_10421_6EJZ,EZE_AWSPROD_10421,TXHMG,True,9/1/2022 12:32:16 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10422,Eze Deliver 2022,Ims_10422_Z5Z5,EZE_AWSPROD_10422,TG77Z,True,9/2/2022 2:36:44 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10423,Adelphi Capital Management Limited,Ims_10423_R83C,EZE_AWSPROD_10423,T2WVE,True,9/12/2022 7:54:11 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10424,ClearLife Capital Pty Ltd ,Ims_10424_NX4T,EZE_AWSPROD_10424,TNJEX,True,9/15/2022 1:05:34 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10426,"Granite Point Capital Management, LP",Ims_10426_4E9S,EZE_AWSPROD_10426,TTXNV,True,10/5/2022 5:25:03 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10428,BlueDrive Global Investors Services (UK) Limited,Ims_10428_NG4B,EZE_AWSPROD_10428,T08WS,True,10/13/2022 9:33:00 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10429,Cadira Capital Management Limited,Ims_10429_WCPT,EZE_AWSPROD_10429,TJYG8,True,10/20/2022 12:55:19 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10430,TCG Crossover Management LLC,Ims_10430_Q23C,EZE_AWSPROD_10430,T5M3Q,True,11/1/2022 8:09:37 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10432,"Alchemy Investment Management Pte Ltd, Singapore",Ims_10432_RCZZ,EZE_AWSPROD_10432,TAZAN,True,11/14/2022 5:35:40 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10433,12 West Capital Management LP ,Ims_10433_2XY3,EZE_AWSPROD_10433,TXMY4,True,11/21/2022 3:55:48 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10434,CTF Capital Management LP,Ims_10434_6BZN,EZE_AWSPROD_10434,TGAHK,True,11/21/2022 4:34:48 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10437,Tallwoods Capital LLC,Ims_10437_FSK1,EZE_AWSPROD_10437,T8BC0,True,12/20/2022 4:33:11 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10438,Slotnik Capital LLC,Ims_10438_8J7T,EZE_AWSPROD_10438,TV0ZF,True,12/27/2022 4:32:03 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10440,325 Capital LLC,Ims_10440_8MPH,EZE_AWSPROD_10440,T0C6D,True,12/29/2022 2:39:39 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10441,"JAWS Estates Capital, LLC",Ims_10441_Q1QR,EZE_AWSPROD_10441,TK1SW,True,12/30/2022 4:06:07 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10442,Maryana Capital Inc,Ims_10442_17AH,EZE_AWSPROD_10442,T5QDB,True,1/4/2023 6:48:36 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10443,Western Standard LLC,Ims_10443_QEDH,EZE_AWSPROD_10443,TRD0T,True,1/4/2023 7:58:17 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10444,Manatuck Hill Partners LLC,Ims_10444_9MV4,EZE_AWSPROD_10444,TB2M9,True,1/5/2023 2:08:34 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10446,"Interval Partners, LP",Ims_10446_15TK,EZE_AWSPROD_10446,TGDV7,True,1/5/2023 8:37:59 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10447,"Satori Environmental Partners Management, LLC",Ims_10447_SS3M,EZE_AWSPROD_10447,T33EP,True,1/6/2023 2:25:59 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10448,North Lion Capital Management LLC ,Ims_10448_68RZ,EZE_AWSPROD_10448,TNS25,True,1/10/2023 9:47:55 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10449,Eze INTL Reporting UAT,Ims_10449_Y5Z5,EZE_AWSPROD_10449,T8ENM,True,1/11/2023 9:41:09 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10451,"ValueAct Capital Mangement, L.P.",Ims_10451_HBS1,EZE_AWSPROD_10451,TDSWJ,True,1/25/2023 9:23:00 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10452,Castlerock Investors LLC,Ims_10452_SCA1,EZE_AWSPROD_10452,T0FG1,True,2/1/2023 4:03:44 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10453,Oakmont Corporation ,Ims_10453_WV26,EZE_AWSPROD_10453,TK53G,True,2/1/2023 6:44:42 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10455,Triveni Capital Investments LP,Ims_10455_9Z8F,EZE_AWSPROD_10455,TRGAE,True,3/3/2023 5:46:32 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10456,Orchard Capital Management LLC,Ims_10456_0HDW,EZE_AWSPROD_10456,TB5XX,True,3/3/2023 10:27:29 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10457,Sellaronda Global Management LP,Ims_10457_02RX,EZE_AWSPROD_10457,TXVHC,True,3/6/2023 10:30:07 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10458,Four Seasons Asia Investment Pte Ltd,Ims_10458_7S9D,EZE_AWSPROD_10458,TGH4V,True,3/8/2023 5:32:03 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10459,"Sheffield Asset Management, L.L.C.",Ims_10459_6A08,EZE_AWSPROD_10459,T36RA,True,3/10/2023 1:39:57 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10460,CB1 Capital Management LLC,Ims_10460_W4AT,EZE_AWSPROD_10460,TNWBS,True,3/13/2023 7:15:32 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10461,Argylefund Management Pty Limited,Ims_10461_S8S8,EZE_AWSPROD_10461,T8HZ8,True,3/15/2023 6:34:49 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10462,Nordwand Capital,Ims_10462_R1JG,EZE_AWSPROD_10462,TV7JQ,True,3/17/2023 3:10:54 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10463,Highland Peak Capital LLC,Ims_10463_R94F,EZE_AWSPROD_10463,TDX66,True,3/22/2023 5:53:46 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10465,"Logica Capital Advisors, LLC",Ims_10465_RSCJ,EZE_AWSPROD_10465,TK8D4,True,4/3/2023 9:21:15 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10466,Adakin Capital LLC,Ims_10466_4NQV,EZE_AWSPROD_10466,T5Y0K,True,4/5/2023 7:23:13 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10467,"Aventail Capital Group, LP",Ims_10467_K6B8,EZE_AWSPROD_10467,TRKM2,True,4/10/2023 8:08:15 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10468,Engine Capital Management LP,Ims_10468_ZA34,EZE_AWSPROD_10468,TB97H,True,4/11/2023 6:09:13 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10469,Floating Capital Management LP,Ims_10469_FJSD,EZE_AWSPROD_10469,TXYV0,True,4/12/2023 6:47:02 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10470,Auspice Capital Investment Management Limited,Ims_10470_788P,EZE_AWSPROD_10470,TGMEF,True,4/17/2023 11:46:43 AM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10471,OLP Capital Management Limited,Ims_10471_XNHV,EZE_AWSPROD_10471,T3A1Y,True,4/20/2023 7:19:54 AM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10472,Islander Capital Partners LP,Ims_10472_FBYH,EZE_AWSPROD_10472,TNZND,True,4/26/2023 6:01:20 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10473,Marathon Resources Advisors LLC,Ims_10473_ZSMA,EZE_AWSPROD_10473,T8N8W,True,4/28/2023 12:23:10 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10474,THG Securities LP,Ims_10474_9RNK,EZE_AWSPROD_10474,TVAWB,True,5/10/2023 9:27:00 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10475,"Fine Capital Partners, LP",Ims_10475_3B1B,EZE_AWSPROD_10475,TE0FT,True,5/17/2023 2:20:52 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10476,Whetstone Capital Advisors LLC,Ims_10476_RGT6,EZE_AWSPROD_10476,T0P39,True,5/24/2023 5:50:53 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10477,Elara Capital Plc,Ims_10477_QQXE,EZE_AWSPROD_10477,TKBPR,True,5/25/2023 11:15:25 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10478,"Legion Partners Asset Management, LLC",Ims_10478_3WAY,EZE_AWSPROD_10478,T61A7,True,5/25/2023 3:39:12 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10479,"ADAR1 Capital Management, LLC",Ims_10479_X284,EZE_AWSPROD_10479,TRPXP,True,5/31/2023 1:46:57 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10480,First Beijing Investment Limited,Ims_10480_GZ27,EZE_AWSPROD_10480,TBCH5,True,6/2/2023 8:39:16 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10482,18 Salisbury Capital Limited,Ims_10482_ZSNQ,EZE_AWSPROD_10482,TGQR3,True,6/8/2023 7:39:40 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10483,2023 EPV LP,Ims_10483_RGJC,EZE_AWSPROD_10483,T3DBJ,True,6/9/2023 8:00:37 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10484,Breyta Capital Partners LP,Ims_10484_YJA6,EZE_AWSPROD_10484,TP2Z1,True,6/13/2023 3:13:33 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10485,"J Park Management, LLC",Ims_10485_E3SJ,EZE_AWSPROD_10485,T8RJG,True,6/13/2023 7:39:24 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10486,Caden Capital Partners LP,Ims_10486_W1YJ,EZE_AWSPROD_10486,TVE5Z,True,6/15/2023 7:00:29 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10487,Orion Resource Partners,Ims_10487_2T95,EZE_AWSPROD_10487,TE3SE,True,6/16/2023 4:37:54 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10488,Stanley Capital Management LLC,Ims_10488_0YCK,EZE_AWSPROD_10488,T0SCX,True,6/27/2023 8:04:18 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10489,"Third Gear Investments, LLC",Ims_10489_111T,EZE_AWSPROD_10489,TKF0C,True,7/5/2023 7:00:02 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10490,Gulf Line Capital Advisors Limited,Ims_10490_HEA8,EZE_AWSPROD_10490,T64KV,True,7/6/2023 9:01:21 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10491,Browning West LP,Ims_10491_KTMP,EZE_AWSPROD_10491,TRT7A,True,7/7/2023 3:25:23 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10492,Endeavour Capital Advisors Inc.,Ims_10492_GTH7,EZE_AWSPROD_10492,TBFTS,True,7/18/2023 6:42:06 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10494,Alpha-Lab Asset Management INC.,Ims_10494_XHH5,EZE_AWSPROD_10494,TGV1Q,True,7/21/2023 5:07:14 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10496,Lyptus Capital LP,Ims_10496_BVZG,EZE_AWSPROD_10496,TP68N,True,7/24/2023 8:18:36 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10499,ServCo Limited (formerly Diamondhead),Ims_10499_E2GD,EZE_AWSPROD_10499,TE732,True,8/25/2023 10:55:46 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10500,Congruence Capital PB LLC,Ims_10500_CV8V,EZE_AWSPROD_10500,T0WPH,True,8/29/2023 1:22:56 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10501,Black Chords Limited,Ims_10501_7PSA,EZE_AWSPROD_10501,TKJA0,True,8/31/2023 1:55:37 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10504,SW7 Asset Management (UK) LLP,Ims_10504_T780,EZE_AWSPROD_10504,TBK4D,True,9/6/2023 1:30:30 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10505,"Frazier Life Sciences Management, L.P.",Ims_10505_N5G4,EZE_AWSPROD_10505,TY8QW,True,9/6/2023 8:27:46 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10509,Daoyi Asset Management ,Ims_10509_M7MM,EZE_AWSPROD_10509,T8Z5R,True,9/25/2023 1:32:20 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10510,"Segra Capital Management, LLC",Ims_10510_TQ3Y,EZE_AWSPROD_10510,TVMS7,True,10/5/2023 7:48:09 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10512,Stonepine Capital Management LLC,Ims_10512_WSD7,EZE_AWSPROD_10512,T1005,True,10/13/2023 1:35:37 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10514,Tenbagger Investment Management (Hong Kong) Limited,Ims_10514_49ZM,EZE_AWSPROD_10514,T6B73,True,10/20/2023 9:15:52 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10515,PV Capital (HK) Limited,Ims_10515_XKCQ,EZE_AWSPROD_10515,TS0TJ,True,10/20/2023 9:56:24 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10518,Miura Geneva Bridge,Ims_10518_ERSA,EZE_AWSPROD_10518,TH1MZ,True,10/27/2023 1:58:03 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10520,Curisa Capital LLC,Ims_10520_4R7B,EZE_AWSPROD_10520,TPCVX,True,11/2/2023 5:28:43 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10521,"Great Point Partners, LLC",Ims_10521_D94G,EZE_AWSPROD_10521,T92FC,True,11/6/2023 9:42:53 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10522,Volt Global Management LP,Ims_10522_90R4,EZE_AWSPROD_10522,TVR2V,True,11/14/2023 8:26:14 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10523,Leibniz Group Services,Ims_10523_ZW7V,EZE_AWSPROD_10523,TEDPA,True,11/15/2023 5:22:15 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10525,"Laird Group Partners, LP",Ims_10525_9C96,EZE_AWSPROD_10525,TKRX8,True,11/21/2023 3:50:33 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10526,Kingsdown Capital Ltd,Ims_10526_R8J1,EZE_AWSPROD_10526,T6EGQ,True,11/23/2023 3:20:15 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10527,221B Capital,Ims_10527_RGMN,EZE_AWSPROD_10527,TS446,True,11/29/2023 8:13:15 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10528,Kaleido Capital Partners Limited,Ims_10528_AJ1J,EZE_AWSPROD_10528,TBSQN,True,12/20/2023 11:48:02 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10529,Niles Investment Management LLC,Ims_10529_D2GZ,EZE_AWSPROD_10529,TYFB4,True,12/20/2023 7:17:08 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10530,Entrust Evergreen Partners Limited,Ims_10530_XB2B,EZE_AWSPROD_10530,TH4YK,True,12/28/2023 12:39:08 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10531,"Longhorn Capital Partners, L.P.",Ims_10531_CDN5,EZE_AWSPROD_10531,T3TJ2,True,1/3/2024 6:54:48 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10532,"Cataria Capital Management, LP",Ims_10532_4YPF,EZE_AWSPROD_10532,TPG5H,True,1/9/2024 5:44:08 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10533,Sarissa Capital Management LP,Ims_10533_5VMF,EZE_AWSPROD_10533,T95S0,True,1/9/2024 6:03:59 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10534,Orient Global Services Pte Limited ,Ims_10534_XG8Q,EZE_AWSPROD_10534,TVVCF,True,1/11/2024 11:41:08 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10535,Infinitum Asset Management LLC,Ims_10535_FMCX,EZE_AWSPROD_10535,TEGZY,True,1/19/2024 4:02:11 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10536,DC Investments (HK) Limited,Ims_10536_9TXN,EZE_AWSPROD_10536,T16KD,True,1/22/2024 7:07:04 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10537,Benchstone Capital Management LP,Ims_10537_XVQF,EZE_AWSPROD_10537,TKW6W,True,2/1/2024 8:29:35 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10538,Bryce Point Capital LLC,Ims_10538_W9QA,EZE_AWSPROD_10538,T6HTB,True,2/2/2024 4:49:02 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10539,"Northern Right Capital Management, LP",Ims_10539_6YEM,EZE_AWSPROD_10539,TS7DT,True,2/9/2024 2:48:58 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10542,"Landmark Investment Partners, L.P.",Ims_10542_E0D8,EZE_AWSPROD_10542,TH887,True,2/15/2024 9:19:56 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10543,Development Cypress One,Ims_10543_3XG2,EZE_AWSPROD_10543,T3XVP,True,2/28/2024 10:38:39 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10544,Development Cypress Two ,Ims_10544_040G,EZE_AWSPROD_10544,TPKF5,True,2/28/2024 10:54:02 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10545,Lakehouse Capital Pty Ltd ,Ims_10545_CA17,EZE_AWSPROD_10545,T992M,True,3/4/2024 6:18:35 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10546,"Wayve Capital Management, LLC",Ims_10546_AV0H,EZE_AWSPROD_10546,TVYP3,True,3/8/2024 3:55:56 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10547,Lighthouse Quantrarian Capital Management LLC,Ims_10547_HQJN,EZE_AWSPROD_10547,TEM9J,True,3/11/2024 3:36:40 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10548,Development Cypress Geneva,Ims_10548_95PA,EZE_AWSPROD_10548,T19X1,True,3/27/2024 4:52:11 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10549,NEXTBio Capital Management LP,Ims_10549_60KF,EZE_AWSPROD_10549,TKZGG,True,3/28/2024 3:17:08 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10550,Pelham Capital Ltd,Ims_10550_WMEH,EZE_AWSPROD_10550,T6N3Z,True,4/2/2024 12:50:01 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10551,Bar Point Management LP,Ims_10551_KED3,EZE_AWSPROD_10551,TSAQE,True,4/2/2024 4:18:38 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10552,Sun Venture Pte. Ltd.,Ims_10552_Z32M,EZE_AWSPROD_10552,TC0AX,True,4/3/2024 8:57:41 AM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10554,Niatross Investments,Ims_10554_V969,EZE_AWSPROD_10554,THBHV,True,4/11/2024 4:15:51 AM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10555,AIHC Capital Management Limited,Ims_10555_RMJA,EZE_AWSPROD_10555,T415A,True,4/17/2024 6:20:24 AM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10556,Eclipse Engagement UAT,Ims_10556_XG97,EZE_AWSPROD_10556,TPPRS,True,4/29/2024 6:19:15 AM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10557,Hara Global Capital Limited,Ims_10557_BBQF,EZE_AWSPROD_10557,T9CC8,True,5/7/2024 4:32:36 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10558,Sales Geneva,Ims_10558_YY0K,EZE_AWSPROD_10558,TW1ZQ,True,5/13/2024 3:26:47 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10559,The Linonia Partnership L,Ims_10559_6CF7,EZE_AWSPROD_10559,TEQK6,True,5/13/2024 6:28:03 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10561,Deployment Geneva,Ims_10561_ZJ8W,EZE_AWSPROD_10561,TM2T4,True,5/15/2024 7:25:34 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10562,Waygrove Partnership Management LP,Ims_10562_PHYT,EZE_AWSPROD_10562,T6RDK,True,5/16/2024 2:54:40 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10563,"Taika Capital, LP",Ims_10563_M3K7,EZE_AWSPROD_10563,TSE12,True,5/17/2024 4:40:55 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10564,Deployment Geneva 2,Ims_10564_TGM1,EZE_AWSPROD_10564,TC3MH,True,5/20/2024 11:01:05 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10565,Spruce Street Capital LP,Ims_10565_SKZE,EZE_AWSPROD_10565,TYS80,True,5/22/2024 8:45:02 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10566,"Crawford Fund Management, LLC",Ims_10566_RAQP,EZE_AWSPROD_10566,THEVF,True,6/4/2024 6:29:26 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10569,CORONET INVESTMENTS PTY LTD,Ims_10569_B75S,EZE_AWSPROD_10569,T9FNW,True,6/18/2024 9:19:48 AM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10570,"Oliver Luxxe Assets, LLC",Ims_10570_1Z8Q,EZE_AWSPROD_10570,TW59B,True,6/20/2024 7:51:21 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10571,Octahedron Capital Management L.P,Ims_10571_0993,EZE_AWSPROD_10571,TETWT,True,7/5/2024 6:05:35 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10572,Sengu Capital Limited,Ims_10572_H69Z,EZE_AWSPROD_10572,T1GG9,True,7/8/2024 10:32:17 AM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10573,"Himalaya Capital Management, LLC",Ims_10573_7MZH,EZE_AWSPROD_10573,TM63R,True,7/15/2024 3:35:32 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10574,Baypointe Partners LLC,Ims_10574_DVBK,EZE_AWSPROD_10574,T6VQ7,True,7/19/2024 2:04:58 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10575,"IDX Advisors, LLC",Ims_10575_MJAD,EZE_AWSPROD_10575,TSHAP,True,7/23/2024 5:02:34 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10576,Rip Road Capital Partners LP (Clone),Ims_10576_K3TX,EZE_AWSPROD_10576,TC6Y5,True,7/23/2024 6:38:08 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10577,Nutshell Asset Management Limited,Ims_10577_G3JA,EZE_AWSPROD_10577,TYWHM,True,7/26/2024 10:22:56 AM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10578,Bay Capital Partners UK Ltd.,Ims_10578_754P,EZE_AWSPROD_10578,THJ53,True,7/29/2024 9:28:47 AM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10579,Deployment Geneva 3,Ims_10579_KZHM,EZE_AWSPROD_10579,T47RJ,True,8/6/2024 9:48:56 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10581,"Fivespan Partners, LP",Ims_10581_4CSC,EZE_AWSPROD_10581,T9JZG,True,8/13/2024 6:42:02 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10582,Iridian Asset Management LLC,Ims_10582_5W6D,EZE_AWSPROD_10582,TW8JZ,True,8/15/2024 7:10:33 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10583,Alpha Astra Asset Management Limited,Ims_10583_N5DC,EZE_AWSPROD_10583,TEY6E,True,8/23/2024 3:27:27 AM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10585,"Blue Orca, LLC",Ims_10585_RHJ3,EZE_AWSPROD_10585,TM9DC,True,9/13/2024 3:10:14 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10586,Geneva Bridge Conversion,Ims_10586_XRZB,EZE_AWSPROD_10586,T6Z0V,True,9/20/2024 2:13:18 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10589,Newport Asia LLC,Ims_10589_XWX8,EZE_AWSPROD_10589,TYZV8,True,10/2/2024 8:38:34 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10591,RDST Capital LLC,Ims_10591_C0X2,EZE_AWSPROD_10591,T4B26,True,10/2/2024 9:39:49 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10593,Dream Peak Capital,Ims_10593_9YQA,EZE_AWSPROD_10593,T9P94,True,10/7/2024 4:08:41 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10595,Starship Capital LLC,Ims_10595_R0NE,EZE_AWSPROD_10595,TF1G2,True,10/28/2024 8:45:57 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10596,West Brow Capital Management LLC,Ims_10596_TXCR,EZE_AWSPROD_10596,T1Q3H,True,10/29/2024 7:16:33 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10597,Drill Capital Management LP,Ims_10597_9BAV,EZE_AWSPROD_10597,TMCQ0,True,10/30/2024 4:00:40 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10598,TANCOOK INVESTMENT MANAGEMENT LTD,Ims_10598_WFGT,EZE_AWSPROD_10598,T72AF,True,10/30/2024 8:17:42 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10599,Tessellis Capital Management LP,Ims_10599_E689,EZE_AWSPROD_10599,TSQXY,True,11/1/2024 8:00:45 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10600,Broadbill Investment Partners LLC,Ims_10600_8DJY,EZE_AWSPROD_10600,TCDHD,True,11/7/2024 5:41:12 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10601,Thunderbird Partners LLP,Ims_10601_EQ3C,EZE_AWSPROD_10601,TZ34W,True,11/8/2024 2:56:45 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10602,Optimus Prime Asset Management Company Limited,Ims_10602_CN5T,EZE_AWSPROD_10602,THRRB,True,11/18/2024 10:07:32 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10603,Khrom Capital Management LLC,Ims_10603_MBW3,EZE_AWSPROD_10603,T4EBT,True,11/18/2024 5:26:56 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10604,UI EKS Smoke Test 01,Ims_10604_1SSJ,EZE_AWSPROD_10604,TQ3Z9,True,11/18/2024 7:30:59 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10605,Juice Capital,Ims_10605_VE58,EZE_AWSPROD_10605,T9SJR,True,11/18/2024 7:42:24 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10606,API EKS Smoke Test 01,Ims_10606_BZAC,EZE_AWSPROD_10606,TWF67,True,11/18/2024 7:52:16 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10607,"Noetic Capital Management, LLC",Ims_10607_VAPB,EZE_AWSPROD_10607,TF4SP,True,11/22/2024 5:44:27 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10608,"Orvieto Fund, LP",Ims_10608_G2W4,EZE_AWSPROD_10608,T1TD5,True,11/22/2024 6:03:20 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10610,Dayah Capital LLC,Ims_10610_EC45,EZE_AWSPROD_10610,T75M3,True,11/22/2024 9:31:58 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10611,Demeter Tactial Investments Corp.,Ims_10611_096D,EZE_AWSPROD_10611,TSV7J,True,12/5/2024 10:23:29 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10612,Felis Advantage Fund LP,Ims_10612_57EA,EZE_AWSPROD_10612,TCGV1,True,12/11/2024 4:22:19 PM,EclipseProdL06.prod.ezesoftcloud.com.,AEPROD01SQL09
+10613,"Four Lion Capital GP, LLC",Ims_10613_F3X3,EZE_AWSPROD_10613,TZ6EG,True,12/13/2024 6:32:21 PM,EclipseProdL07.prod.ezesoftcloud.com.,AEPROD01SQL10
+10614,TC43 LLC,Ims_10614_XBSH,EZE_AWSPROD_10614,THW1Z,True,1/23/2025 7:38:59 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10615,"Bain Capital Life Sciences, LP",Ims_10615_GDV6,EZE_AWSPROD_10615,T4HNE,True,1/31/2025 8:38:31 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10616,Capella Capital Limited,Ims_10616_6FKQ,EZE_AWSPROD_10616,TQ78X,True,2/7/2025 8:50:18 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10617,Stellar Investment Management Co. Ltd,Ims_10617_MZKC,EZE_AWSPROD_10617,T9WWC,True,3/5/2025 1:39:06 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10619,Consulta Limited,Ims_10619_CAZW,EZE_AWSPROD_10619,TF83A,True,3/14/2025 10:09:19 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10620,"Linmar Capital Fund, LP",Ims_10620_73HQ,EZE_AWSPROD_10620,T1XPS,True,3/17/2025 1:39:19 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10621,"Readout Capital, LP",Ims_10621_ZTEP,EZE_AWSPROD_10621,TMKA8,True,3/18/2025 6:59:53 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10622,Marchant MC Limited,Ims_10622_7WSR,EZE_AWSPROD_10622,T78XQ,True,3/24/2025 1:40:53 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10623,Atlas Holdings LLC,Ims_10623_FNSQ,EZE_AWSPROD_10623,TSYH6,True,3/24/2025 5:01:04 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10624,Antiloop AB,Ims_10624_KJPG,EZE_AWSPROD_10624,TCM4N,True,3/27/2025 6:32:45 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10625,TBP Investment Advisory (HK) Limited,Ims_10625_TCNV,EZE_AWSPROD_10625,TZ9R4,True,4/1/2025 8:27:44 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10626,Crescent Capital Partners Management Pty Limited,Ims_10626_SYDK,EZE_AWSPROD_10626,THZBK,True,4/4/2025 7:56:36 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10627,Interhorizon Capital LLC,Ims_10627_5R6Q,EZE_AWSPROD_10627,T4MZ2,True,4/9/2025 5:31:56 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10628,VictoryArc Holdings LP,Ims_10628_W080,EZE_AWSPROD_10628,TQAJH,True,4/16/2025 5:11:27 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10630,"Vista Equity Partners Management, LLC",Ims_10630_74V2,EZE_AWSPROD_10630,TWNSF,True,4/23/2025 3:00:36 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10631,"Mission Creek Capital Partners, Inc",Ims_10631_24M5,EZE_AWSPROD_10631,TFBCY,True,4/23/2025 4:33:11 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10632,APAC Sales ERA,Ims_10632_QYGJ,EZE_AWSPROD_10632,T210D,True,4/25/2025 7:13:30 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10633,Tybourne Capital Management (HK) Ltd.,Ims_10633_5NAW,EZE_AWSPROD_10633,TMPKW,True,4/28/2025 5:58:25 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10634,MLBBEA1_15 (Thad),Ims_10634_3EAN,EZE_AWSPROD_10634,T7C7B,True,4/29/2025 8:29:12 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10635,MLBBEA1_14 (Rishi),Ims_10635_14EV,EZE_AWSPROD_10635,TT1TT,True,4/30/2025 7:06:47 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10636,"SkyREM, LLC.",Ims_10636_8J3T,EZE_AWSPROD_10636,TCQE9,True,5/6/2025 6:04:44 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10637,Southpoint Capital Advisors LP,Ims_10637_F3XW,EZE_AWSPROD_10637,TZD1R,True,5/7/2025 7:24:19 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10638,"MGA Entertainment, Inc.",Ims_10638_F0H1,EZE_AWSPROD_10638,TJ2N7,True,5/7/2025 7:44:14 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10639,Atlantis Investment Management Ltd.,Ims_10639_SKC8,EZE_AWSPROD_10639,T4R8P,True,5/9/2025 10:32:40 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10640,"Lost Coast Collective, LLC",Ims_10640_N7QW,EZE_AWSPROD_10640,TQDW5,True,5/19/2025 6:03:37 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10641,"Owls Nest Partners IA, LLC",Ims_10641_1PHJ,EZE_AWSPROD_10641,TA3FM,True,6/4/2025 3:13:45 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10642,Camphora Capital Inc,Ims_10642_YNYR,EZE_AWSPROD_10642,TWS33,True,6/24/2025 3:31:21 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10643,OEW Advisors LLC,Ims_10643_XD59,EZE_AWSPROD_10643,TFEPJ,True,6/27/2025 1:29:18 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10644,Invisage Capital Pte. Ltd.,Ims_10644_FVW7,EZE_AWSPROD_10644,T24A1,True,7/3/2025 5:39:08 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10645,Jurassic Future Inc ,Ims_10645_GEW7,EZE_AWSPROD_10645,TMSXG,True,7/8/2025 6:01:30 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10646,"SCHF (GPE), LLC",Ims_10646_93H1,EZE_AWSPROD_10646,T7FGZ,True,7/21/2025 3:09:15 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10647,Otter Rock Advisors LP,Ims_10647_7PP2,EZE_AWSPROD_10647,TT54E,True,7/30/2025 6:01:59 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10648,"Saddle Point Management, L.P.",Ims_10648_4KFG,EZE_AWSPROD_10648,TCTQX,True,8/8/2025 8:07:12 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10649,"Odyssean, LLC",Ims_10649_975W,EZE_AWSPROD_10649,TZGBC,True,8/12/2025 6:04:02 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10650,Fibonacci Asset Management Global Pte. Ltd,Ims_10650_29H8,EZE_AWSPROD_10650,TJ5YV,True,8/14/2025 1:09:36 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10651,Unio Capital LLC,Ims_10651_N277,EZE_AWSPROD_10651,T4VJA,True,8/18/2025 2:11:25 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10652,Luminous Asset Management Pte Ltd,Ims_10652_P8E3,EZE_AWSPROD_10652,TQH5S,True,8/20/2025 7:26:25 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10653,"Chester Asset Management Pty, LTD",Ims_10653_942N,EZE_AWSPROD_10653,TA6S8,True,8/26/2025 7:16:48 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10654,BluePrism UAT,Ims_10654_CHCM,EZE_AWSPROD_10654,TWWCQ,True,8/26/2025 10:42:03 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10655,"RR Advisors, LLC dba RCH ENERGY",Ims_10655_XHBN,EZE_AWSPROD_10655,TFJ06,True,8/28/2025 5:19:11 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10656,Ninth Avenue Capital,Ims_10656_285G,EZE_AWSPROD_10656,T27KN,True,9/11/2025 8:03:20 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10657,First Wave Capital Management LLC,Ims_10657_ENKY,EZE_AWSPROD_10657,TMX74,True,9/11/2025 8:34:22 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10659,Periwinkle Trading LLC,Ims_10659_331C,EZE_AWSPROD_10659,TT8E2,True,9/18/2025 5:14:17 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10660,Invictus Investment Partners Ltd,Ims_10660_P9CE,EZE_AWSPROD_10660,TCY1H,True,9/22/2025 5:37:22 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10661,Agur Capital Management Ltd,Ims_10661_3XQ8,EZE_AWSPROD_10661,TZKN0,True,9/22/2025 1:49:49 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10662,Provisio Capital Management (HK) Limited,Ims_10662_9AXN,EZE_AWSPROD_10662,TJ98F,True,9/23/2025 8:24:32 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10665,"Portolan Capital Management, LLC",Ims_10665_V4KJ,EZE_AWSPROD_10665,TAA2W,True,10/3/2025 5:50:00 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10666,Rainbow Finance Corporation,Ims_10666_K4NR,EZE_AWSPROD_10666,TWZPB,True,10/7/2025 4:24:50 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10667,Shoten Capital LP,Ims_10667_N0Q1,EZE_AWSPROD_10667,TFN9T,True,10/13/2025 8:37:14 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10670,Fein Capital LLC,Ims_10670_SDVZ,EZE_AWSPROD_10670,T7P47,True,10/17/2025 5:50:17 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10671,Gratus Investment Management Private Limited,Ims_10671_FYG4,EZE_AWSPROD_10671,TTBQP,True,10/21/2025 5:44:52 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10672,Delft Investments Limited,Ims_10672_2RPX,EZE_AWSPROD_10672,TD1B5,True,10/21/2025 3:37:25 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10673,Loon Lake Capital Management LP,Ims_10673_7717,EZE_AWSPROD_10673,TZPYM,True,10/23/2025 5:46:56 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10674,One Oak Capital Management LLC,Ims_10674_BYVK,EZE_AWSPROD_10674,TJCJ3,True,11/4/2025 7:40:58 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10675,Tree Line Advisors (Hong Kong) Limited,Ims_10675_Q3R7,EZE_AWSPROD_10675,T525J,True,11/5/2025 9:57:27 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10676,Cove View Investment Partners LLC,Ims_10676_NWP0,EZE_AWSPROD_10676,TQQS1,True,11/6/2025 2:16:29 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10677,"Samara Capital GT IM, LP",Ims_10677_GT64,EZE_AWSPROD_10677,TADCG,True,11/12/2025 9:48:56 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10678,Doxara Capital LP,Ims_10678_XGQZ,EZE_AWSPROD_10678,TX2ZZ,True,11/14/2025 1:52:32 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10680,Shellback Capital LP,Ims_10680_50ZK,EZE_AWSPROD_10680,T2E6X,True,11/26/2025 8:48:49 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10681,MIHIC Fund Management Pty Ltd,Ims_10681_AQG9,EZE_AWSPROD_10681,TN3TC,True,12/1/2025 8:05:42 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10682,"PC3 Partners, LLC",Ims_10682_AY5F,EZE_AWSPROD_10682,T7SDV,True,12/2/2025 5:36:49 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10683,Cephei Capital Management (Hong Kong) Limited,Ims_10683_66M3,EZE_AWSPROD_10683,TTF1A,True,12/8/2025 6:21:59 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10684,Lean Arc Investment Management Limited,Ims_10684_E1WT,EZE_AWSPROD_10684,TD4MS,True,12/15/2025 6:21:34 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10685,Orion Resource Partners USA,Ims_10685_FK2T,EZE_AWSPROD_10685,TZT88,True,12/17/2025 12:15:38 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10686,8 Knots Management LLC,Ims_10686_CVQY,EZE_AWSPROD_10686,TJFVQ,True,12/19/2025 4:49:17 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10687,Granular Capital Ltd,Ims_10687_T1JJ,EZE_AWSPROD_10687,T55F6,True,1/15/2026 5:10:20 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10688,Coastlands Capital LP,Ims_10688_HT0J,EZE_AWSPROD_10688,TQV2N,True,1/16/2026 9:26:47 PM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10689,Redwood Peak Limited,Ims_10689_1Z7Z,EZE_AWSPROD_10689,TAGP4,True,1/21/2026 9:42:26 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10690,China Harbour International Asset Management Limited,Ims_10690_7J1C,EZE_AWSPROD_10690,TX69K,True,1/23/2026 6:39:33 AM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10691,KGI Hong Kong Limited,Ims_10691_2GV1,EZE_AWSPROD_10691,TFVX2,True,1/28/2026 9:10:08 AM,EclipseProdL03.prod.ezesoftcloud.com.,AEPROD01SQL06
+10692,First Ray Capital Management Pte. Ltd,Ims_10692_A1WV,EZE_AWSPROD_10692,T2HGH,True,1/29/2026 3:45:12 PM,EclipseProdL02.prod.ezesoftcloud.com.,AEPROD01SQL05
+10693,Tridge Capital Management LLC,Ims_10693_2AAZ,EZE_AWSPROD_10693,TN740,True,2/11/2026 3:03:22 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10694,West Bay Partners Limited,Ims_10694_FPCN,EZE_AWSPROD_10694,T7WQF,True,2/12/2026 6:00:57 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10695,"Nihonbashi Value Partners Co., Ltd",Ims_10695_NC5R,EZE_AWSPROD_10695,TTJAY,True,2/20/2026 4:29:19 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10696,Neos Partners,Ims_10696_N0Z8,EZE_AWSPROD_10696,TD7YD,True,2/24/2026 5:50:16 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10697,Calterra Investment Management Corporation,Ims_10697_NVJ7,EZE_AWSPROD_10697,TZXHW,True,2/25/2026 7:41:03 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10698,Intewise Capital Management Limited,Ims_10698_9B7Q,EZE_AWSPROD_10698,TJK5B,True,3/4/2026 8:41:11 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10699,Cohesion Asset Management Limited,Ims_10699_MG7Q,EZE_AWSPROD_10699,T58RT,True,3/16/2026 11:47:17 AM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10700,"DTC Investment Management (Hong Kong), LTD",Ims_10700_06P6,EZE_AWSPROD_10700,TQYC9,True,3/17/2026 7:06:56 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10701,REQ Capital AS,Ims_10701_K53S,EZE_AWSPROD_10701,TAKZR,True,3/30/2026 1:06:53 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10702,"Perga Capital Management, LP",Ims_10702_P3N0,EZE_AWSPROD_10702,TX9K7,True,4/7/2026 8:27:56 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10703,"Kalehua Capital Management, LLC",Ims_10703_JV54,EZE_AWSPROD_10703,TFZ6P,True,4/10/2026 6:20:44 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10704,Innov Harbor Asset Management Limited,Ims_10704_0WM6,EZE_AWSPROD_10704,T2MT5,True,4/15/2026 8:38:02 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10705,Polarix Limited,Ims_10705_Q9EE,EZE_AWSPROD_10705,TNADM,True,4/16/2026 6:16:27 AM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10706,Actus Ray Partners Archive,Ims_10706_0TTE,EZE_AWSPROD_10706,T8013,True,4/16/2026 8:02:08 PM,AEPROD01SQL20.prod.ezesoftcloud.com.,AEPROD01SQL20
+10707,First Ray Capital Management Pte. Ltd.,Ims_10707_VDWR,EZE_AWSPROD_10707,TTNMJ,True,4/20/2026 6:33:30 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10708,Almanack Capital LP,Ims_10708_6KDC,EZE_AWSPROD_10708,TDB81,True,4/20/2026 8:38:00 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10709,Triple Helix Investments LLC,Ims_10709_RMCW,EZE_AWSPROD_10709,T00VG,True,4/21/2026 3:07:45 PM,EclipseProdL04.prod.ezesoftcloud.com.,AEPROD01SQL07
+10710,"Morant Wright Management, Ltd",Ims_10710_V2YR,EZE_AWSPROD_10710,TJPEZ,True,4/29/2026 2:25:17 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+10711,Stanhope Capital Partners LP,Ims_10711_FH6Z,EZE_AWSPROD_10711,T5C2E,True,5/8/2026 7:29:22 PM,EclipseProdL05.prod.ezesoftcloud.com.,AEPROD01SQL08
+

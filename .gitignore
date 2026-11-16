@@ -10,8 +10,7 @@
 !rules/
 !themes/
 !scripts/
-# !notes/  !security/  !ecc/   ← uncomment after checking
-
 !plugins/
 plugins/*
 !plugins/known_marketplaces.json
+!global-agents/

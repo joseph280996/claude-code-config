@@ -2,8 +2,8 @@
 name: brainstorm
 description: "Creative design dialogue — explores widely before converging on a spec"
 model: opus
-tools: Read, Grep, Glob
-permissionMode: plan
+tools: Read, Grep, Glob, Bash
+permissionMode: dontAsk
 ---
 <!-- dispatching subagents works best via: claude --agent brainstorm -->
 Load the `brainstorming` skill and follow it for this session.

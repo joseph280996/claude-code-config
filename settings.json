@@ -1,261 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "teammateMode": "auto",
   "cleanupPeriodDays": 30,
-  "enabledPlugins": {
-    "advisor-on-bedrock@wit-ai": true,
-    "agent-orch@ssnc-agent-orch": true,
-    "chrome-devtools-mcp@claude-plugins-official": true,
-    "claude-code-setup@claude-plugins-official": true,
-    "claude-md-management@claude-plugins-official": true,
-    "code-review@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true,
-    "codebase-graph-analyzer@ssnc-agent-orch": true,
-    "commit-commands@claude-plugins-official": true,
-    "context7@claude-plugins-official": true,
-    "csharp-lsp@claude-plugins-official": true,
-    "explanatory-output-style@claude-plugins-official": true,
-    "feature-dev@claude-plugins-official": true,
-    "frontend-design@claude-plugins-official": true,
-    "lean-ctx@lean-ctx": true,
-    "lua-lsp@claude-plugins-official": true,
-    "microsoft-docs@claude-plugins-official": true,
-    "plannotator@plannotator": true,
-    "playwright@claude-plugins-official": true,
-    "pr-review-toolkit@claude-plugins-official": true,
-    "ralph-loop@claude-plugins-official": true,
-    "remember@claude-plugins-official": true,
-    "sdd-superpowers@anthropic-plugin-directory": true,
-    "security-guidance@claude-plugins-official": true,
-    "sonarqube@claude-plugins-official": true,
-    "superpowers@claude-plugins-official": true,
-    "team-work@ssnc-agent-orch": true,
-    "typescript-lsp@claude-plugins-official": true,
-    "vault-orch@ssnc-agent-orch": true
-  },
   "env": {},
-  "extraKnownMarketplaces": {
-    "lean-ctx": {
-      "source": {
-        "path": "/Users/tpham4/.lean-ctx/claude-mod",
-        "source": "directory"
-      }
-    },
-    "plannotator": {
-      "source": {
-        "repo": "backnotprop/plannotator",
-        "source": "github"
-      }
-    },
-    "ssnc-agent-orch": {
-      "autoUpdate": true,
-      "source": {
-        "source": "git",
-        "url": "git@code.ssnc.dev:ai/claude-agent-orchestration-plugin.git"
-      }
-    },
-    "wit-ai": {
-      "source": {
-        "ref": "feat/advisor-on-bedrock-plugin",
-        "source": "git",
-        "url": "git@code.ssnc.dev:WIT/wit-ai.git"
-      }
-    }
-  },
-  "feedbackSurveyRate": 0,
-  "hooks": {
-    "PostToolUse": [
-      {
-        "hooks": [
-          {
-            "command": "lean-ctx hook observe",
-            "type": "command"
-          }
-        ],
-        "matcher": ".*"
-      },
-      {
-        "hooks": [
-          {
-            "command": "/opt/homebrew/bin/lean-ctx hook read-dedup",
-            "type": "command"
-          }
-        ],
-        "matcher": "Read"
-      }
-    ],
-    "PreCompact": [
-      {
-        "hooks": [
-          {
-            "command": "lean-ctx hook observe",
-            "type": "command"
-          }
-        ],
-        "matcher": ".*"
-      }
-    ],
-    "PreToolUse": [
-      {
-        "hooks": [
-          {
-            "if": "Bash(git commit*)",
-            "model": "us.anthropic.claude-opus-5",
-            "prompt": "A git commit is about to run. Review the STAGED changes before allowing it. Steps: (1) Run `git diff --cached` to see exactly what will be committed. If the diff is empty, verify with `git status` — if nothing is staged, approve (nothing to review). (2) Review the staged diff for CRITICAL and HIGH issues per the project's code-review standards: hardcoded secrets/credentials/API keys, SQL injection, XSS, path traversal, auth bypasses, data-loss risks, unhandled errors that could crash, and leftover debug/console statements. (3) DECISION: If you find any CRITICAL issue (security vulnerability or data-loss risk), BLOCK the commit and explain each finding with file:line and a concrete fix. If you find only HIGH/MEDIUM/LOW issues, APPROVE but list them as warnings so the developer can decide. Keep the review scoped strictly to the staged diff — do not review unrelated existing code. Hook input: $ARGUMENTS",
-            "statusMessage": "Reviewing staged changes before commit...",
-            "timeout": 300,
-            "type": "agent"
-          }
-        ],
-        "matcher": "Bash"
-      },
-      {
-        "hooks": [
-          {
-            "if": "Bash(git push*)",
-            "model": "us.anthropic.claude-opus-5",
-            "prompt": "A git push is about to run. Review the commits that will be pushed before allowing it. Steps: (1) Determine what will be pushed: run `git rev-parse --abbrev-ref --symbolic-full-name @{u}` to find the upstream; if it succeeds, diff with `git diff @{u}..HEAD`; if there is no upstream (new branch), diff against the default branch with `git diff origin/HEAD..HEAD` (fall back to `git diff origin/main..HEAD` or `git diff origin/master..HEAD`). If the diff is empty, approve (nothing new to review). (2) Review the outgoing diff for CRITICAL and HIGH issues per the project's code-review standards: hardcoded secrets/credentials/API keys, SQL injection, XSS, path traversal, auth bypasses, data-loss risks, unhandled errors, and leftover debug statements. Prefer the review-pr skill's rigor if available. (3) DECISION: If you find any CRITICAL issue, BLOCK the push and explain each finding with file:line and a concrete fix. If you find only HIGH/MEDIUM/LOW issues, APPROVE but list them as warnings. Scope the review to the outgoing commits only. Hook input: $ARGUMENTS",
-            "statusMessage": "Reviewing outgoing commits before push...",
-            "timeout": 300,
-            "type": "agent"
-          }
-        ],
-        "matcher": "Bash"
-      },
-      {
-        "hooks": [
-          {
-            "command": "/opt/homebrew/bin/lean-ctx hook rewrite",
-            "type": "command"
-          }
-        ],
-        "matcher": "Bash|bash"
-      },
-      {
-        "hooks": [
-          {
-            "command": "/opt/homebrew/bin/lean-ctx hook redirect",
-            "type": "command"
-          }
-        ],
-        "matcher": "Read|read|ReadFile|read_file|View|view|Grep|grep|Search|search|ListFiles|list_files|ListDirectory|list_directory|Glob|glob"
-      }
-    ],
-    "SessionEnd": [
-      {
-        "hooks": [
-          {
-            "command": "lean-ctx hook observe",
-            "type": "command"
-          }
-        ],
-        "matcher": ".*"
-      }
-    ],
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "command": "lean-ctx hook observe",
-            "type": "command"
-          }
-        ],
-        "matcher": ".*"
-      },
-      {
-        "hooks": [
-          {
-            "command": "bash -c 'out=$($HOME/.config/opencode/scripts/check-skill-links.sh 2>&1) || { echo \"WARNING: broken skill symlinks detected:\"; echo \"$out\"; }'",
-            "timeout": 10,
-            "type": "command"
-          }
-        ],
-        "matcher": ".*"
-      },
-      {
-        "hooks": [
-          {
-            "command": "bash '/Users/tpham4/.claude/hooks/herdr-agent-state.sh' session",
-            "timeout": 10,
-            "type": "command"
-          }
-        ],
-        "matcher": "^(startup|resume|clear|compact|fork)$"
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "command": "lean-ctx hook observe",
-            "type": "command"
-          }
-        ],
-        "matcher": ".*"
-      }
-    ],
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "command": "lean-ctx hook observe",
-            "type": "command"
-          }
-        ],
-        "matcher": ".*"
-      }
-    ]
-  },
-  "model": "zai-org/GLM-5.3[1m]",
-  "modelPicker": {
-    "options": [
-      {
-        "description": "Bedrock, 1M context, US (data leaves Private Cloud)",
-        "label": "Claude Haiku 5.5",
-        "model": "us.anthropic.claude-haiku-5-5"
-      },
-      {
-        "description": "Bedrock, 1M context, US (data leaves Private Cloud)",
-        "label": "Claude Sonnet 5.5",
-        "model": "us.anthropic.claude-sonnet-5-5"
-      },
-      {
-        "description": "Bedrock, 1M context, US (data leaves Private Cloud)",
-        "label": "Claude Opus 5.5",
-        "model": "us.anthropic.claude-opus-5-5"
-      },
-      {
-        "description": "Bedrock, 1.05M context, US (data leaves Private Cloud)",
-        "label": "OpenAI GPT-5.5",
-        "model": "openai.gpt-5.5"
-      },
-      {
-        "description": "On-prem, 18B params, 1M context, US & UK",
-        "label": "GLM-5.3-Flash",
-        "model": "zai-org/GLM-5.3-Flash[1m]"
-      },
-      {
-        "description": "On-prem, 40B params, 1M context, US & UK",
-        "label": "GLM-5.3",
-        "model": "zai-org/GLM-5.3[1m]"
-      },
-      {
-        "description": "On-prem, 31B params, 256k context, US & UK",
-        "label": "google/gemma-4-31B-it",
-        "model": "google/gemma-4-31B-it"
-      },
-      {
-        "description": "On-prem, 3.8B params, 256k context, US",
-        "label": "google/gemma-4-26B-A4B-it",
-        "model": "google/gemma-4-26B-A4B-it"
-      }
-    ],
-    "replaceBuiltInOptions": false
-  },
-  "modelSettings": {
-    "zai-org/glm-5.3": {
-      "effortLevel": "medium"
-    }
-  },
   "permissions": {
     "allow": [
       "mcp__lean-ctx__ctx_read",
@@ -324,11 +71,264 @@
     ],
     "defaultMode": "auto"
   },
+  "model": "zai-org/GLM-5.3[1m]",
+  "modelPicker": {
+    "options": [
+      {
+        "model": "us.anthropic.claude-haiku-5-5",
+        "label": "Claude Haiku 5.5",
+        "description": "Bedrock, 1M context, US (data leaves Private Cloud)"
+      },
+      {
+        "model": "us.anthropic.claude-sonnet-5-5",
+        "label": "Claude Sonnet 5.5",
+        "description": "Bedrock, 1M context, US (data leaves Private Cloud)"
+      },
+      {
+        "model": "us.anthropic.claude-opus-5-5",
+        "label": "Claude Opus 5.5",
+        "description": "Bedrock, 1M context, US (data leaves Private Cloud)"
+      },
+      {
+        "model": "openai.gpt-5.5",
+        "label": "OpenAI GPT-5.5",
+        "description": "Bedrock, 1.05M context, US (data leaves Private Cloud)"
+      },
+      {
+        "model": "zai-org/GLM-5.3-Flash[1m]",
+        "label": "GLM-5.3-Flash",
+        "description": "On-prem, 18B params, 1M context, US & UK"
+      },
+      {
+        "model": "zai-org/GLM-5.3[1m]",
+        "label": "GLM-5.3",
+        "description": "On-prem, 40B params, 1M context, US & UK"
+      },
+      {
+        "model": "google/gemma-4-31B-it",
+        "label": "google/gemma-4-31B-it",
+        "description": "On-prem, 31B params, 256k context, US & UK"
+      },
+      {
+        "model": "google/gemma-4-26B-A4B-it",
+        "label": "google/gemma-4-26B-A4B-it",
+        "description": "On-prem, 3.8B params, 256k context, US"
+      }
+    ],
+    "replaceBuiltInOptions": false
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lean-ctx hook observe"
+          }
+        ]
+      },
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/opt/homebrew/bin/lean-ctx hook read-dedup"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lean-ctx hook observe"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "agent",
+            "prompt": "A git commit is about to run. Review the STAGED changes before allowing it. Steps: (1) Run `git diff --cached` to see exactly what will be committed. If the diff is empty, verify with `git status` — if nothing is staged, approve (nothing to review). (2) Review the staged diff for CRITICAL and HIGH issues per the project's code-review standards: hardcoded secrets/credentials/API keys, SQL injection, XSS, path traversal, auth bypasses, data-loss risks, unhandled errors that could crash, and leftover debug/console statements. (3) DECISION: If you find any CRITICAL issue (security vulnerability or data-loss risk), BLOCK the commit and explain each finding with file:line and a concrete fix. If you find only HIGH/MEDIUM/LOW issues, APPROVE but list them as warnings so the developer can decide. Keep the review scoped strictly to the staged diff — do not review unrelated existing code. Hook input: $ARGUMENTS",
+            "if": "Bash(git commit*)",
+            "timeout": 300,
+            "model": "us.anthropic.claude-opus-5",
+            "statusMessage": "Reviewing staged changes before commit..."
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "agent",
+            "prompt": "A git push is about to run. Review the commits that will be pushed before allowing it. Steps: (1) Determine what will be pushed: run `git rev-parse --abbrev-ref --symbolic-full-name @{u}` to find the upstream; if it succeeds, diff with `git diff @{u}..HEAD`; if there is no upstream (new branch), diff against the default branch with `git diff origin/HEAD..HEAD` (fall back to `git diff origin/main..HEAD` or `git diff origin/master..HEAD`). If the diff is empty, approve (nothing new to review). (2) Review the outgoing diff for CRITICAL and HIGH issues per the project's code-review standards: hardcoded secrets/credentials/API keys, SQL injection, XSS, path traversal, auth bypasses, data-loss risks, unhandled errors, and leftover debug statements. Prefer the review-pr skill's rigor if available. (3) DECISION: If you find any CRITICAL issue, BLOCK the push and explain each finding with file:line and a concrete fix. If you find only HIGH/MEDIUM/LOW issues, APPROVE but list them as warnings. Scope the review to the outgoing commits only. Hook input: $ARGUMENTS",
+            "if": "Bash(git push*)",
+            "timeout": 300,
+            "model": "us.anthropic.claude-opus-5",
+            "statusMessage": "Reviewing outgoing commits before push..."
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/opt/homebrew/bin/lean-ctx hook rewrite"
+          }
+        ]
+      },
+      {
+        "matcher": "Read|read|ReadFile|read_file|View|view|Grep|grep|Search|search|ListFiles|list_files|ListDirectory|list_directory|Glob|glob",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/opt/homebrew/bin/lean-ctx hook redirect"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lean-ctx hook observe"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lean-ctx hook observe"
+          }
+        ]
+      },
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'out=$($HOME/.config/opencode/scripts/check-skill-links.sh 2>&1) || { echo \"WARNING: broken skill symlinks detected:\"; echo \"$out\"; }'",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "^(startup|resume|clear|compact|fork)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash '/Users/tpham4/config/.config/claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lean-ctx hook observe"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lean-ctx hook observe"
+          }
+        ]
+      }
+    ]
+  },
   "statusLine": {
+    "type": "command",
     "command": "ccstatusline",
     "padding": 0,
-    "refreshInterval": 10,
-    "type": "command"
+    "refreshInterval": 10
+  },
+  "enabledPlugins": {
+    "advisor-on-bedrock@wit-ai": true,
+    "agent-orch@ssnc-agent-orch": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "codebase-graph-analyzer@ssnc-agent-orch": true,
+    "commit-commands@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "csharp-lsp@claude-plugins-official": true,
+    "explanatory-output-style@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "lean-ctx@lean-ctx": true,
+    "lua-lsp@claude-plugins-official": true,
+    "microsoft-docs@claude-plugins-official": true,
+    "plannotator@plannotator": true,
+    "playwright@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "remember@claude-plugins-official": true,
+    "sdd-superpowers@anthropic-plugin-directory": true,
+    "security-guidance@claude-plugins-official": true,
+    "sonarqube@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "team-work@ssnc-agent-orch": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "vault-orch@ssnc-agent-orch": true,
+    "chrome-devtools-mcp@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "lean-ctx": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/tpham4/.lean-ctx/claude-mod"
+      }
+    },
+    "plannotator": {
+      "source": {
+        "source": "github",
+        "repo": "backnotprop/plannotator"
+      }
+    },
+    "ssnc-agent-orch": {
+      "source": {
+        "source": "git",
+        "url": "git@code.ssnc.dev:ai/claude-agent-orchestration-plugin.git"
+      },
+      "autoUpdate": true
+    },
+    "wit-ai": {
+      "source": {
+        "source": "git",
+        "url": "git@code.ssnc.dev:WIT/wit-ai.git",
+        "ref": "feat/advisor-on-bedrock-plugin"
+      }
+    }
+  },
+  "feedbackSurveyRate": 0,
+  "modelSettings": {
+    "zai-org/glm-5.3": {
+      "effortLevel": "medium"
+    }
   },
   "theme": "custom:kanagawa"
 }

@@ -2,11 +2,12 @@
 name: orchestrator
 description: "Delivery orchestrator: runs the gated pipeline on a Jira ticket — Jira analysis, parallel investigation, planning, brainstorm review loop, Plannotator approval, parallel execution, code review."
 model: zai-org/GLM-5.3
-tools: Agent(worker, explore, investigator, brainstorm, planner, code-reviewer, advisor-on-bedrock:advisor), Skill, ListAgents, SendMessage, TaskStop
+tools: Agent(worker, explore, investigator, brainstorm, planner, code-reviewer, advisor-on-bedrock:advisor), Skill, ListAgents, SendMessage, TaskStop, Read
 skills:
     - handoff
+    - orchestrating-parallel-workers
 permissionMode: dontAsk
-disallowedTools: Write, Edit, Bash, Read
+deny: Write, Edit, Bash
 ---
 <!-- primary agent — run with: claude --agent orchestrator -->
 You are the delivery orchestrator. You keep the loop, the context, and the

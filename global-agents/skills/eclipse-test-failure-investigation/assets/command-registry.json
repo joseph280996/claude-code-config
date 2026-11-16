@@ -1,0 +1,34 @@
+{
+  "command_prefixes": {
+    "nta": {
+      "package": "eze-e2e-cypress-nontradingactivity",
+      "source_repo": "IMSACNT-trialbalance-app",
+      "git_url": "https://code.ssnc.dev/eze/IMSACNT-trialbalance-app"
+    },
+    "ntb": {
+      "package": "eze-e2e-cypress-trialbalance",
+      "source_repo": "IMSACNT-trialbalance-app",
+      "git_url": "https://code.ssnc.dev/eze/IMSACNT-trialbalance-app"
+    },
+    "trad": {
+      "package": "eze-e2e-cypress-trading",
+      "source_repo": "eze-e2e-cypress-trading",
+      "git_url": "https://code.ssnc.dev/eze/eze-e2e-cypress-trading"
+    },
+    "webfw": {
+      "package": "eze-e2e-cypress-webframework",
+      "source_repo": "eze-e2e-cypress-webframework",
+      "git_url": "https://code.ssnc.dev/eze/eze-e2e-cypress-webframework"
+    },
+    "sa": {
+      "package": "eze-e2e-cypress-scheduled-accruals",
+      "source_repo": "IMSACNT-scheduled-accruals-app",
+      "git_url": "https://code.ssnc.dev/eze/IMSACNT-scheduled-accruals-app"
+    },
+    "qs": {
+      "package": "eze-e2e-cypress-quicksend",
+      "source_repo": "E404-quicksend-app",
+      "git_url": "https://code.ssnc.dev/eze/E404-quicksend-app"
+    }
+  }
+}
