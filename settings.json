@@ -67,7 +67,7 @@
     "deny": [
       "Read(./.env)"
     ],
-    "defaultMode": "auto"
+    "defaultMode": "acceptEdits"
   },
   "model": "zai-org/GLM-5.3[1m]",
   "modelPicker": {

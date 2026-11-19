@@ -6,11 +6,11 @@ set -euo pipefail
 input=$(cat)
 prompt=$(printf '%s' "$input" | jq -r '.prompt // empty' 2>/dev/null || true)
 [ -z "$prompt" ] && exit 0
+tpath=$(printf '%s' "$input" | jq -r '.transcript_path // empty' 2>/dev/null || true)
 
 # Already escalated? Never gate a session on an Opus variant.
 model=$(printf '%s' "$input" | jq -r '.model // .modelInfo.id // empty' 2>/dev/null || true)
 if [ -z "$model" ]; then
-  tpath=$(printf '%s' "$input" | jq -r '.transcript_path // empty' 2>/dev/null || true)
   if [ -n "$tpath" ] && [ -f "$tpath" ]; then
     model=$(tail -c 200000 "$tpath" 2>/dev/null | jq -r 'select(.message.model != null) | .message.model' 2>/dev/null | tail -1 || true)
   fi
@@ -24,6 +24,19 @@ if printf '%s' "$prompt" | grep -q 'ESCALATE: Tier 1'; then
   jq -n '{hookSpecificOutput:{hookEventName:"UserPromptSubmit",additionalContext:"The subagent reported ESCALATE: Tier 1. Tell the user: run /model opus, then redo the task as the escalated (Opus) run."}}'
   exit 0
 fi
+
+# Agent scoping: gate only planner and brainstorm agents.
+# Agent identity comes from the transcript (hook stdin lacks an agent field).
+# Fail-open: missing or unreadable agent-setting bypasses the gate.
+gate_agent=""
+if [ -n "$tpath" ] && [ -f "$tpath" ]; then
+  gate_agent=$(grep -o '"agentSetting":"[^"]*"' "$tpath" 2>/dev/null | tail -1 \
+    | sed -e 's/^"agentSetting":"//' -e 's/"$//' || true)
+fi
+case "$gate_agent" in
+  planner|brainstorm) ;;
+  *) exit 0 ;;
+esac
 
 # Prompt-level complexity score. Cheap heuristics only.
 score=0
