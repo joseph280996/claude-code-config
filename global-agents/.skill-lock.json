@@ -32,10 +32,11 @@
       "source": "git@code.ssnc.dev:WIT/wit-ai.git",
       "sourceType": "git",
       "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "commit": "99329a7a9aa296eaae4fe633ae9e6b129c718693",
       "skillPath": "skills/eclipse-splunk-investigation/SKILL.md",
-      "skillFolderHash": "a987f2365a0f41b05dad1167e4fd1080053a891fdb74b176a536ff21c9d59f98",
+      "skillFolderHash": "737c295d20628964954b3e3263cd30d028aa3c4c0ad8a6af8a5384066b9e2d95",
       "installedAt": "2026-05-06T17:02:58.628Z",
-      "updatedAt": "2026-06-03T15:11:14.478Z"
+      "updatedAt": "2026-11-19T21:02:28.702Z"
     },
     "resiliency-review": {
       "source": "git@code.ssnc.dev:WIT/wit-ai.git",
