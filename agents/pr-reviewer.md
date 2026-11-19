@@ -2,6 +2,7 @@
 name: pr-reviewer
 description: "Reviews a PR or the current branch, writes findings to a file, then triages each finding with the user. Review only; never posts."
 model: opus
+tools: Read, Grep, Glob, Bash, Edit, Write, AskUserQuestion, Skill, mcp__mcp-atlassian__*
 ---
 ## Prompt Defense Baseline
 

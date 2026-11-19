@@ -2,6 +2,7 @@
 name: doc-updater
 description: "Documentation and codemap specialist. Use for updating codemaps and documentation."
 model: zai-org/GLM-5.3-Flash
+tools: Read, Grep, Glob, Bash, Edit, Write
 ---
 # Documentation & Codemap Specialist
 

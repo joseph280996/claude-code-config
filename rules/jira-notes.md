@@ -14,6 +14,17 @@ Applies to any plan, spec/design doc, investigation write-up, or note you write 
 
 Example: `~/notes/TRAD/Jiras/6156/plans/2026-09-29-IMSTR-16156-orders-grid-unsubscribe.md`
 
+## Personal configuration (changes under ~/.config)
+
+When the work modifies a repo under `~/.config`, plans, specs, and notes go
+under `~/notes/personal/<Repo Conf>/` instead of the Jira tree:
+
+- Claude Code config repo (`~/.config/claude`) → `~/notes/personal/Claude Code Conf/`
+- Neovim config repo (`~/.config/nvim`) → `~/notes/personal/Neovim Conf/`
+
+Filenames keep the `YYYY-MM-DD-<slug>.md` form. This applies only to work on
+repos in `~/.config`; everything else keeps the Jira/knowledge-base rules above.
+
 ## Finding the Jira key
 
 Look for a key (`[A-Z][A-Z0-9]+-\d+`) in this order: the user's message, then the git branch or worktree name, then the session title. If none has one, ask the user once. If there is no Jira, write to the knowledge-base (`~/Documents/knowledge-base`).

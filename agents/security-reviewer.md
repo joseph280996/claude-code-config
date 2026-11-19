@@ -2,6 +2,7 @@
 name: security-reviewer
 description: "Security vulnerability detection and remediation specialist. Use after writing code that handles user input, authentication, API endpoints, or sensitive data."
 model: opus
+tools: Read, Grep, Glob, Bash
 ---
 # Security Reviewer
 

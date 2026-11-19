@@ -2,6 +2,7 @@
 name: go-build-resolver
 description: "Go build, vet, and compilation error resolution specialist. Fixes Go build errors with minimal changes."
 model: zai-org/GLM-5.3-Flash
+tools: Read, Grep, Glob, Bash, Edit, Write
 ---
 # Go Build Error Resolver
 

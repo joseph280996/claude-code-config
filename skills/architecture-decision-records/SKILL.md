@@ -176,5 +176,5 @@ proposed → accepted → [deprecated | superseded by ADR-NNNN]
 
 ## Integration with Other Skills
 
-- **Plan agent**: when the plan agent proposes architecture changes, suggest creating an ADR
+- **Planner agent**: when the planner agent proposes architecture changes, suggest creating an ADR
 - **Code reviewer agent**: flag PRs that introduce architectural changes without a corresponding ADR

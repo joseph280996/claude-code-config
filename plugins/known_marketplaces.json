@@ -40,5 +40,30 @@
     },
     "installLocation": "/Users/tpham4/.lean-ctx/claude-mod",
     "lastUpdated": "2026-11-16T16:01:22.704Z"
+  },
+  "arch-nexus": {
+    "source": {
+      "source": "git",
+      "url": "https://code.ssnc.dev/eze/ARCH-Nexus.git"
+    },
+    "installLocation": "/Users/tpham4/.config/claude/plugins/marketplaces/arch-nexus",
+    "lastUpdated": "2026-11-17T15:27:15.361Z",
+    "autoUpdate": true
+  },
+  "understand-anything": {
+    "source": {
+      "source": "github",
+      "repo": "Egonex-AI/Understand-Anything"
+    },
+    "installLocation": "/Users/tpham4/.config/claude/plugins/marketplaces/understand-anything",
+    "lastUpdated": "2026-11-18T21:59:41.943Z"
+  },
+  "tokeneconomizer": {
+    "source": {
+      "source": "directory",
+      "path": "/Users/tpham4/Code/Personal/TokenEconomizer"
+    },
+    "installLocation": "/Users/tpham4/Code/Personal/TokenEconomizer",
+    "lastUpdated": "2026-11-18T22:01:43.932Z"
   }
 }

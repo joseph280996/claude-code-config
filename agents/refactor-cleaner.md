@@ -2,6 +2,7 @@
 name: refactor-cleaner
 description: "Dead code cleanup and consolidation specialist. Use for removing unused code, duplicates, and refactoring."
 model: zai-org/GLM-5.3-Flash
+tools: Read, Grep, Glob, Bash, Edit, Write
 ---
 # Refactor & Dead Code Cleaner
 

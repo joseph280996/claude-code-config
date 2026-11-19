@@ -1,6 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "teammateMode": "auto",
   "cleanupPeriodDays": 30,
   "env": {},
   "permissions": {
@@ -66,8 +65,7 @@
       "mcp__lean-ctx__ctx"
     ],
     "deny": [
-      "Grep",
-      "Glob"
+      "Read(./.env)"
     ],
     "defaultMode": "auto"
   },
@@ -257,6 +255,15 @@
             "command": "lean-ctx hook observe"
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/tpham4/.config/claude/hooks/complexity-gate.sh",
+            "timeout": 5
+          }
+        ]
       }
     ]
   },
@@ -275,26 +282,22 @@
     "code-simplifier@claude-plugins-official": true,
     "codebase-graph-analyzer@ssnc-agent-orch": true,
     "commit-commands@claude-plugins-official": true,
-    "context7@claude-plugins-official": true,
     "csharp-lsp@claude-plugins-official": true,
     "explanatory-output-style@claude-plugins-official": true,
-    "feature-dev@claude-plugins-official": true,
     "lean-ctx@lean-ctx": true,
     "lua-lsp@claude-plugins-official": true,
     "microsoft-docs@claude-plugins-official": true,
     "plannotator@plannotator": true,
     "playwright@claude-plugins-official": true,
-    "pr-review-toolkit@claude-plugins-official": true,
-    "ralph-loop@claude-plugins-official": true,
     "remember@claude-plugins-official": true,
-    "sdd-superpowers@anthropic-plugin-directory": true,
-    "security-guidance@claude-plugins-official": true,
     "sonarqube@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,
     "team-work@ssnc-agent-orch": true,
     "typescript-lsp@claude-plugins-official": true,
     "vault-orch@ssnc-agent-orch": true,
-    "chrome-devtools-mcp@claude-plugins-official": true
+    "mattpocock-skills@claude-plugins-official": true,
+    "understand-anything@understand-anything": true,
+    "tokeneconomizer@tokeneconomizer": true
   },
   "extraKnownMarketplaces": {
     "lean-ctx": {
@@ -322,6 +325,18 @@
         "url": "git@code.ssnc.dev:WIT/wit-ai.git",
         "ref": "feat/advisor-on-bedrock-plugin"
       }
+    },
+    "understand-anything": {
+      "source": {
+        "source": "github",
+        "repo": "Egonex-AI/Understand-Anything"
+      }
+    },
+    "tokeneconomizer": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/tpham4/Code/Personal/TokenEconomizer"
+      }
     }
   },
   "feedbackSurveyRate": 0,
@@ -330,5 +345,37 @@
       "effortLevel": "medium"
     }
   },
-  "theme": "custom:kanagawa"
+  "agent": "orchestrator",
+  "tui": "fullscreen",
+  "theme": "custom:kanagawa",
+  "teammateMode": "auto",
+  "autoMode": {
+    "environment": [
+      "### Org-wide",
+      "- **Organization**: Eclipse Engineering R&D Team (multi-tenant SAAS application)",
+      "- **Cloud provider(s)**: None configured",
+      "- **Repository visibility**: assume private (github.com:joseph280996/claude-code-config.git — not queryable via gh here; no visibility signal found, treat as private per default inference)",
+      "- **Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "- **Secrets management**: None configured",
+      "- **Default / protected branches**: unknown — origin/HEAD unset, not queryable via gh here",
+      "- **CI/CD deploy targets**: None configured",
+      "- **Network posture**: None configured",
+      "- **Host containment**: None configured — assume Claude Code runs on an ordinary developer machine or CI runner with open internet",
+      "- **Source control**: The trusted repo (github.com:joseph280996/claude-code-config.git) and its remote only — no additional orgs configured",
+      "- **Trusted internal domains**: None configured",
+      "- **Trusted cloud buckets**: None configured",
+      "- **Key internal services**: None configured",
+      "- **Internal package registry**: None configured",
+      "- **Sensitive data locations & audiences**: global-agents/skills/eclipse-log-size-analysis/.env.example — any file or store holding personal data, confidential business data, credentials, regulated data, or similarly sensitive material; share only with audiences cleared at the [named+specifics] bar",
+      "- **Data retention / declassification**: None configured",
+      "- **Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment",
+      "- **Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "- **Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "- **Primary use of Claude Code**: software development",
+      "- **Trusted repo**: /Users/tpham4/config/.config/claude (github.com:joseph280996/claude-code-config.git) and its configured remote",
+      "- **Org-specific CLIs**: None configured",
+      "- routine under this repo's working tree is expected; k8s namespace work observed against `plannotator` and `agents` namespaces in this project's transcripts"
+    ]
+  }
 }

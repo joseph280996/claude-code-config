@@ -201,11 +201,12 @@
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
       "skillPath": "skills/productivity/teach/SKILL.md",
-      "skillFolderHash": "15f8c86d39ef834e643d092733ca899b59049067",
+      "skillFolderHash": "3fd617b610e59acbb99644de1ef37e394ff53cd1",
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-08-05T17:26:36.347Z",
-      "updatedAt": "2026-08-05T17:26:36.347Z"
+      "updatedAt": "2026-11-17T17:07:58.062Z"
     },
     "to-questionnaire": {
       "source": "mattpocock/skills",
@@ -231,10 +232,11 @@
       "source": "herdrdev/herdr",
       "sourceType": "github",
       "sourceUrl": "https://github.com/herdrdev/herdr.git",
+      "commit": "ee5bfb5041bb3e4a49d591c72308aae3c81ecdde",
       "skillPath": "skills/herdr/SKILL.md",
       "skillFolderHash": "2be0d86d481d1bb29c62e11ef37b78d27d01b478",
       "installedAt": "2026-10-14T17:09:43.472Z",
-      "updatedAt": "2026-10-14T17:09:43.472Z"
+      "updatedAt": "2026-11-18T17:39:48.459Z"
     },
     "angularjs-audit": {
       "source": "git@code.ssnc.dev:WIT/wit-ai.git",

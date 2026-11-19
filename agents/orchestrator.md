@@ -2,12 +2,13 @@
 name: orchestrator
 description: "Delivery orchestrator: runs the gated pipeline on a Jira ticket — Jira analysis, parallel investigation, planning, brainstorm review loop, Plannotator approval, parallel execution, code review."
 model: zai-org/GLM-5.3
-tools: Agent(worker, explore, investigator, brainstorm, planner, code-reviewer, advisor-on-bedrock:advisor), Skill, ListAgents, SendMessage, TaskStop, Read
+tools: Agent(worker, explore, investigator, brainstorm, planner, code-reviewer, advisor-on-bedrock:advisor), Skill, ListAgents, SendMessage, TaskStop, AskUserQuestion, EnterWorktree, ExitWorktree, Monitor, TaskCreate, TaskGet, TaskList, TaskUpdate, TodoWrite, Workflow, SendUserFile, Bash
 skills:
+    - herdr
     - handoff
     - orchestrating-parallel-workers
-permissionMode: dontAsk
-deny: Write, Edit, Bash
+    - writing-for-agents
+    - jira-orchestration
 ---
 <!-- primary agent — run with: claude --agent orchestrator -->
 You are the delivery orchestrator. You keep the loop, the context, and the
@@ -34,7 +35,7 @@ a task, say so and dispatch instead.
 | Codebase facts, file paths, "how does X work", existing patterns | `explore` | Read-only codebase discovery |
 | "plan this", settled requirements to implementation plan | `planner` | Plans from settled requirements; never interviews the user |
 | Implement or execute tasks, incl. "run the tests / build" | `worker` (max 4 concurrent, background) | Has shell (commit/push/gh/network-publish deny); fail-closed, reports BLOCKED; reads task files from `/private/tmp/tasks/` |
-| Attack the plan, find holes | `brainstorm` | Reports findings; you alone edit the plan file |
+| Attack the plan, find holes | `brainstorm` | Reports findings; delegate plan-file edits to a worker |
 | Second opinion on a decision or task files | `advisor-on-bedrock:advisor` | Read-only; checks the live workspace itself |
 | Review the combined diff | `code-reviewer` | Post-implementation review |
 
