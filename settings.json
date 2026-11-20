@@ -65,7 +65,9 @@
       "mcp__lean-ctx__ctx"
     ],
     "deny": [
-      "Read(./.env)"
+      "Read(./.env)",
+      "Skill(superpowers:using-git-worktrees)",
+      "Skill(superpowers:using-git-worktrees *)"
     ],
     "defaultMode": "acceptEdits"
   },
@@ -73,17 +75,17 @@
   "modelPicker": {
     "options": [
       {
-        "model": "us.anthropic.claude-haiku-5-5",
+        "model": "global.anthropic.claude-haiku-5-5",
         "label": "Claude Haiku 5.5",
         "description": "Bedrock, 1M context, US (data leaves Private Cloud)"
       },
       {
-        "model": "us.anthropic.claude-sonnet-5-5",
+        "model": "global.anthropic.claude-sonnet-5-5",
         "label": "Claude Sonnet 5.5",
         "description": "Bedrock, 1M context, US (data leaves Private Cloud)"
       },
       {
-        "model": "us.anthropic.claude-opus-5-5",
+        "model": "global.anthropic.claude-opus-5-5",
         "label": "Claude Opus 5.5",
         "description": "Bedrock, 1M context, US (data leaves Private Cloud)"
       },
@@ -156,7 +158,7 @@
             "prompt": "A git commit is about to run. Review the STAGED changes before allowing it. Steps: (1) Run `git diff --cached` to see exactly what will be committed. If the diff is empty, verify with `git status` — if nothing is staged, approve (nothing to review). (2) Review the staged diff for CRITICAL and HIGH issues per the project's code-review standards: hardcoded secrets/credentials/API keys, SQL injection, XSS, path traversal, auth bypasses, data-loss risks, unhandled errors that could crash, and leftover debug/console statements. (3) DECISION: If you find any CRITICAL issue (security vulnerability or data-loss risk), BLOCK the commit and explain each finding with file:line and a concrete fix. If you find only HIGH/MEDIUM/LOW issues, APPROVE but list them as warnings so the developer can decide. Keep the review scoped strictly to the staged diff — do not review unrelated existing code. Hook input: $ARGUMENTS",
             "if": "Bash(git commit*)",
             "timeout": 300,
-            "model": "us.anthropic.claude-opus-5",
+            "model": "global.anthropic.claude-opus-5",
             "statusMessage": "Reviewing staged changes before commit..."
           }
         ]
@@ -169,7 +171,7 @@
             "prompt": "A git push is about to run. Review the commits that will be pushed before allowing it. Steps: (1) Determine what will be pushed: run `git rev-parse --abbrev-ref --symbolic-full-name @{u}` to find the upstream; if it succeeds, diff with `git diff @{u}..HEAD`; if there is no upstream (new branch), diff against the default branch with `git diff origin/HEAD..HEAD` (fall back to `git diff origin/main..HEAD` or `git diff origin/master..HEAD`). If the diff is empty, approve (nothing new to review). (2) Review the outgoing diff for CRITICAL and HIGH issues per the project's code-review standards: hardcoded secrets/credentials/API keys, SQL injection, XSS, path traversal, auth bypasses, data-loss risks, unhandled errors, and leftover debug statements. Prefer the review-pr skill's rigor if available. (3) DECISION: If you find any CRITICAL issue, BLOCK the push and explain each finding with file:line and a concrete fix. If you find only HIGH/MEDIUM/LOW issues, APPROVE but list them as warnings. Scope the review to the outgoing commits only. Hook input: $ARGUMENTS",
             "if": "Bash(git push*)",
             "timeout": 300,
-            "model": "us.anthropic.claude-opus-5",
+            "model": "global.anthropic.claude-opus-5",
             "statusMessage": "Reviewing outgoing commits before push..."
           }
         ]
@@ -377,5 +379,6 @@
       "- **Org-specific CLIs**: None configured",
       "- routine under this repo's working tree is expected; k8s namespace work observed against `plannotator` and `agents` namespaces in this project's transcripts"
     ]
-  }
+  },
+  "skipWorkflowUsageWarning": true
 }

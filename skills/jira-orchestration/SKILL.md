@@ -67,7 +67,7 @@ Register every parsed verdict token in the registry.
    the investigation findings. Score #8 only if the settled requirements
    already show the plan's size — before a plan exists it cannot be scored.
    Tier 1 → dispatch the planner directly with
-   `model: SSC-US/us.anthropic.claude-opus-5-5-1m#high`. For a pre-scored
+   `model: SSC-US/global.anthropic.claude-opus-5-5-1m#high`. For a pre-scored
    dispatch, send only the statement that this dispatch is the escalated run
    and must not emit `ESCALATE:` again — there is no prior Complexity line and
    no draft to revise. No user confirmation needed, the pre-score decides. Tier 0 → dispatch on the default model. The
@@ -84,10 +84,10 @@ Register every parsed verdict token in the registry.
    back to the user, settle it, and re-dispatch. If it reports
    `ESCALATE: Tier 1`, stop before the brainstorm loop: tell the user the
    plan needs the Opus model for planning and get their call on switching
-   (`SSC-US/us.anthropic.claude-opus-5-5-1m`) or continuing. On confirm,
+   (`SSC-US/global.anthropic.claude-opus-5-5-1m`) or continuing. On confirm,
    make a fresh `planner` dispatch (no sessionID — the model override applies
    at dispatch time) with
-   `model: SSC-US/us.anthropic.claude-opus-5-5-1m#high`, carrying the original dispatch
+   `model: SSC-US/global.anthropic.claude-opus-5-5-1m#high`, carrying the original dispatch
    prompt plus the first run's Complexity line, plan-file path, and a clear
    statement that this dispatch is the escalated run and must not emit
    `ESCALATE:` again. Keep the original `ESCALATE:` marker out of the

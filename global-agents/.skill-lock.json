@@ -306,10 +306,11 @@
       "source": "git@code.ssnc.dev:WIT/wit-ai.git",
       "sourceType": "git",
       "sourceUrl": "git@code.ssnc.dev:WIT/wit-ai.git",
+      "commit": "99329a7a9aa296eaae4fe633ae9e6b129c718693",
       "skillPath": "skills/sentryone-sql-investigation/SKILL.md",
       "skillFolderHash": "49743fc26eed2efaf0e6a192efdad49d275c9b3e06302f0bbf77aced5cd61d52",
       "installedAt": "2026-11-12T16:39:38.276Z",
-      "updatedAt": "2026-11-12T16:39:38.276Z"
+      "updatedAt": "2026-11-19T21:21:39.392Z"
     },
     "pr-session-metadata": {
       "source": "git@code.ssnc.dev:WIT/wit-ai.git",

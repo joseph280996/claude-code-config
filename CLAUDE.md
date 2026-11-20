@@ -40,6 +40,22 @@ task/todo file per parallel worker in `/private/tmp/tasks/` for builds, all
 dispatched together via the Agent tool. Confirm the parallel plan with the
 user before spawning workers that edit files.
 
+## Subagent dispatch lanes
+
+- Name a spawned agent only for addressable, read-only follow-ups: named
+  spawns become read-only teammates (Grep, Glob, Skill, SendMessage, worktree
+  tools only) — no Read, Write, Edit, or Bash.
+- Spawn agents WITHOUT a name for work that writes or runs commands: unnamed
+  background spawns get their agent file's full declared toolset (frontmatter
+  honored; type allowlists are ignored in subagent files — bare `Agent`).
+- Agent definitions load at process start: agents/*.md edits do not affect
+  running sessions or panes.
+- Bash commands containing git commit (even in grep or echo) pass only with
+  the agent-orch Co-authored-by trailer. Agents never commit; the user commits.
+- A session editing this config repo loads the update-config skill first.
+- In the read-only teammate lane, Grep with multiline: true returns raw file
+  content; plain Grep output is compressed to ~20 file:line rows by lean-ctx.
+
 ## Advisor
 
 Dispatch the `advisor-on-bedrock:advisor` subagent (stronger model, read-only)
