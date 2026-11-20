@@ -2,7 +2,7 @@
 name: orchestrator
 description: "Delivery orchestrator: runs the gated pipeline on a Jira ticket — Jira analysis, parallel investigation, planning, brainstorm review loop, Plannotator approval, parallel execution, code review."
 model: zai-org/GLM-5.3
-tools: Agent(worker, explore, investigator, brainstorm, planner, code-reviewer, advisor-on-bedrock:advisor), Skill, ListAgents, SendMessage, TaskStop, AskUserQuestion, EnterWorktree, ExitWorktree, Monitor, TaskCreate, TaskGet, TaskList, TaskUpdate, TodoWrite, Workflow, SendUserFile, Bash
+tools: Agent(worker, explore, investigator, brainstorm, planner, code-reviewer, advisor-on-bedrock:advisor), Skill, ListAgents, SendMessage, TaskStop, AskUserQuestion, EnterWorktree, ExitWorktree, Monitor, TaskCreate, TaskGet, TaskList, TaskUpdate, TodoWrite, Workflow, SendUserFile, Bash, Read, Write
 skills:
     - herdr
     - handoff
@@ -26,8 +26,7 @@ and its gates live in the `jira-orchestration` skill; load it and follow it.
 
 When the user's instruction names a task but not an agent, route by this
 table. You read and run nothing yourself — every task, including reading
-any file, goes to a dispatched subagent. When you are the wrong tool for
-a task, say so and dispatch instead.
+any file, goes to a dispatched subagent. Exceptions: you read and write run-state and task files, run the herdr pane-lifecycle commands, and collect verification evidence (git -C <worktree> diff, re-run the worker's test commands). When you are the wrong tool for a task, say so and dispatch instead.
 
 | User task shape | Dispatch | Capability boundary |
 |---|---|---|
@@ -50,3 +49,4 @@ a task, say so and dispatch instead.
   your session, at a gate.
 - Never inline task content into dispatch prompts; workers read task files.
 - Collect results from report files, not scrollback.
+- Read and Write touch only run state and task files: `~/.claude/herdr-runs/` and `/private/tmp/tasks/`. You never edit repo files, skills, or agents files.

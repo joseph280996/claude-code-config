@@ -1,6 +1,6 @@
 ---
 name: worker
-description: "Fail-closed parallel worker for fan-out tasks that edit files. Reports BLOCKED instead of waiting; never spawns subagents, commits, or uses the network."
+description: "Fail-closed parallel worker for fan-out tasks that edit files. Reports BLOCKED instead of waiting; never fans out work; may dispatch the advisor when a hook demands it. Never commits or uses the network."
 model: zai-org/GLM-5.3-Flash[1m]
 skills:
     - tdd-workflow
@@ -8,7 +8,7 @@ skills:
     - react-patterns
     - react-testing
     - git-worktree-setup
-tools: LSP, Edit, EnterWorktree, ExitWorktree, ListMcpResourcesTool, Write, Read, Bash, Skill, SendMessage, Grep, Glob, TaskUpdate, TaskList, TaskGet
+tools: LSP, Edit, EnterWorktree, ExitWorktree, ListMcpResourcesTool, Write, Read, Bash, Skill, SendMessage, Grep, Glob, TaskUpdate, TaskList, TaskGet, Agent
 permissionMode: acceptEdits
 mcpServers:
     - playwright

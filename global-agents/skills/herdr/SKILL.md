@@ -134,6 +134,13 @@ Use the kind requested by the user. Run `herdr agent` to inspect the installed k
 herdr agent start reviewer --kind codex --pane <returned-pane-id> -- <agent-args...>
 ```
 
+The `claude` kind starts a Claude Code session in the pane. Pass the agent
+role and any flags after `--`:
+
+```bash
+herdr agent start <name> --kind claude --pane <returned-pane-id> -- --agent <role-file-name>
+```
+
 A successful `agent start` returns only after Herdr detects the expected agent in the same pane and considers it ready for interactive input. If the agent is blocked during startup, the command returns `agent_not_ready` immediately but keeps the name available for `agent read` and `agent send-keys`. Wait until the agent becomes idle before prompting it. Startup defaults to a 30-second timeout.
 
 Submit work through the agent surface:
@@ -184,6 +191,12 @@ Read the new pane ID from `.result.pane.pane_id`, then run and inspect the comma
 herdr pane run <returned-pane-id> "just test"
 herdr pane wait-output <returned-pane-id> --match "test result" --timeout 120000
 herdr pane read <returned-pane-id> --source recent-unwrapped --lines 120
+```
+
+Close the pane when the command's work is done:
+
+```bash
+herdr pane close <returned-pane-id>
 ```
 
 `pane run` queues command text and Enter together; success acknowledges admission, not command execution. On macOS, `pane run` and `agent start` reject a command that exceeds the terminal's current canonical line-input limit before queuing it. Wait for the interactive shell prompt before retrying. The check covers this submission, not an earlier incomplete line or a later terminal-mode change. `pane wait-output` searches the selected snapshot immediately, so output that already exists can match. Use `--match <text>` for a literal substring or `--regex <pattern>` for a Rust regular expression. Omitting `--timeout` allows an indefinite wait.

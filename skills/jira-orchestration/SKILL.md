@@ -6,6 +6,25 @@ description: "Run the gated Jira delivery pipeline on a ticket: analysis, parall
 Run the full delivery pipeline on one Jira ticket. Three phases, each with a
 gate. Gates are binding: you stop, the user decides, then you continue.
 
+## Run state
+
+At the first dispatch, create the run. Run id: `t<last4>-<slug>-<shorthash>`
+(`<shorthash>` is `git -C <worktree> rev-parse --short=7 HEAD`). Herdr names
+must start with a letter. Keep the slug to 5 characters or fewer so the
+longest name stays within herdr's 32-character cap.
+
+- `~/.claude/herdr-runs/<run>/state.md` — durable registry. One file per
+  run: `{phase, round, wave, pane table (name, pane_id, claude_session_id,
+  transcript_path), verdicts}`.
+- `/private/tmp/tasks/<run>/` — task and report files. `/private/tmp` is
+  reboot-volatile; the registry is not.
+
+Update `state.md` at every stage transition and before every gate. Resolve
+a herdr pane by agent name while it is live (`herdr agent get <name>`);
+after a restart, pane ids renumber and names clear, so resolve by the
+`claude_session_id` in the pane table and re-adopt with `claude --resume`.
+Register every parsed verdict token in the registry.
+
 ## Phase 1 — Understand
 
 1. **Fetch the ticket.** Use the `mcp-atlassian` MCP tools to get the issue.
@@ -19,16 +38,21 @@ gate. Gates are binding: you stop, the user decides, then you continue.
    short kebab-case topic from the summary. The skill asks which base to use
    and confirms before creating; never guess the base.
 
-3. **Investigate in parallel.** Decide yourself how many agents to dispatch,
-   based on what the ticket touches:
-   - `explore` agents for the codebase surfaces the ticket names or implies.
-   - `investigator` agents for Splunk logs or Grafana metrics when the
-     ticket touches runtime behavior — give each an exact query.
-   Dispatch all of them together as background subagents. Read-only facts
-   are theirs to find; do not ask the user for anything discoverable.
+3. **Investigate.** Launch one investigator pane yourself — split the pane
+   as in the `herdr` skill, read `pane_id`, then:
+   `herdr agent start <run>-inv --kind claude --pane <pane_id> -- --agent investigator`
+   The investigator pane receives the same deny blob as worker panes
+   (Bash(git commit:*), Bash(git push:*), gh, and herdr denied) since it
+   has Write, Agent, and Bash. The investigator pane runs the breadth leg itself with unnamed in-pane
+   subagent fan-out for codebase surfaces, plus named teammates for
+   follow-up questions; its Write and Agent tools are scoped in
+   `agents/investigator.md`. Give it the exact Splunk or Grafana queries.
+   The pane surfaces no MCP servers; the grafana curl fallback lives in
+   the investigator body. Read-only facts are the pane's to find; do not
+   ask the user for anything discoverable.
 
 4. **Gate: present findings.** Give the user the ticket analysis plus the
-   merged investigation findings, and stop. They steer before planning.
+   merged investigation findings, and stop. Present the gate with the AskUserQuestion tool, in this pane, with 2-4 options; the user answers in the TUI. They steer before planning.
 
 ## Phase 2 — Plan
 
@@ -75,16 +99,17 @@ gate. Gates are binding: you stop, the user decides, then you continue.
    changed after review) keeps the same `model:` override and the
    escalated-run statement — the ticket stays on Opus.
 
-3. **Brainstorm review loop.** Repeat until convergence — no round cap:
+3. **Brainstorm review loop.** Repeat until convergence, capped at 3 rounds per check-in:
    a. Dispatch the `brainstorm` subagent with the plan file and the ticket
       context. Ask it to attack the plan: wrong assumptions,
-      missing edge cases, simpler alternatives, risks. Brainstorm reports
+      missing edge cases, simpler alternatives, risks. End the report with
+      one line: VERDICT: CLEAN or VERDICT: ISSUES <n>. Brainstorm reports
       its findings; the orchestrator alone edits the plan file.
    b. Fold every accepted point back into the plan.
    c. Report the round number and what changed to the user.
    d. Points still unresolved after you re-engage once with your evidence go
       to the user — not back to brainstorm.
-   The loop ends when brainstorm reports no further issues.
+   Parse the round verdict from the brainstorm report: `VERDICT: CLEAN` ends the loop; `VERDICT: ISSUES <n>` means the next round. After 3 rounds without `VERDICT: CLEAN`, take the open points to the user with both positions instead of a round 4.
 
 4. **Advisor review of the plan.** Dispatch the `advisor-on-bedrock:advisor`
    agent with the plan-file path — this runs once, after planner and
@@ -92,7 +117,7 @@ gate. Gates are binding: you stop, the user decides, then you continue.
    same way as brainstorm round points.
 
 5. **Gate: Plannotator.** Submit the plan for review with the `submit_plan`
-   tool. Approval is the only thing that starts Phase 3. If the review
+   tool. Approval is the only thing that starts Phase 3. After submit_plan returns, treat the Plannotator approval as the Phase 3 gate — do not add a second AskUserQuestion here. If the review
    requests changes, fix and resubmit from step 3 (edit the plan yourself —
    do not re-dispatch the planner unless requirements changed).
 
@@ -108,23 +133,24 @@ gate. Gates are binding: you stop, the user decides, then you continue.
    sequential dependencies go in one task, in order. Number task files from
    `01`; each carries a `version:` line, `## Goal`, `## Steps` (checkbox
    list), `## Out of bounds`, `## Verification`, `## Report path`. Task
-   files live in `/private/tmp/tasks/` — never in a worktree or repo, and
-   they are read-only to workers.
+   files live in `/private/tmp/tasks/<run>/` — never in a worktree or repo, and
+   they are read-only to workers. Each wave task file states the fan-out rule: no downward fan-out unless the task grants it; a worker that attempts it reports `BLOCKED: needed downward fan-out because the task file forbids it`.
 
-3. **Gate: confirm dispatch.** Show the user the checklist and stop. Dispatch
+3. **Gate: confirm dispatch.** Show the user the checklist and stop. Present the gate with the AskUserQuestion tool, in this pane, with 2-4 options; the user answers in the TUI. Dispatch
    only on their go.
 
-4. **Dispatch.** Background `subagent` calls with `agent: "worker"`, one per
-   task, dispatched together, prompt exactly one line:
-   `Read /private/tmp/tasks/<task-id>.md and execute it. Your report path is in the file.`
-   Use a specialist agent instead of `worker` only when a task clearly fits
-   one — but note the orchestrator's permissions allow only the seven
-   listed subagents; anything else needs the user to add it to
-   `agents/orchestrator.md` first. When no allowed specialist fits, use
-   `worker` with the task file naming the testing requirements.
+4. **Dispatch.** Unnamed background Agent spawns — no name parameter, one
+   per task, dispatched together (named spawns arrive as stripped,
+   read-only teammates). Prompt per worker stays exactly one line:
+   `Read /private/tmp/tasks/<run>/<task-id>.md and execute it. Your report path is in the file.`
+   Task files live in `/private/tmp/tasks/<run>/`. Use a specialist agent
+   instead of `worker` only when a task clearly fits one — the seven
+   agents in `agents/orchestrator.md` are the allowed set. For pane stages,
+   follow the pane lifecycle in `orchestrating-parallel-workers`. The
+   fan-out rule in each task file governs worker Agent use.
 
 5. **Collect.** Read every report file, never scrollback. A missing report
-   is the fail-loud signal. Every `BLOCKED:` line becomes a visible decision
+   is the fail-loud signal. After a pane stage settles, poll for its report file every 15 seconds until the file appears or the task timeout expires; then parse the verdict token from the file. A report whose verdict token is missing counts as BLOCKED. Register pane and worker verdicts in `state.md`. Every `BLOCKED:` line becomes a visible decision
    for the user.
 
 6. **Advisor review of the implementation.** Give the
@@ -133,7 +159,7 @@ gate. Gates are binding: you stop, the user decides, then you continue.
    in; surface disagreements to the user.
 
 7. **Review.** Send the combined diff to the `code-reviewer` subagent before
-   reporting completion.
+   reporting completion. The review runs as a Workflow call whose reviewer schema carries `needs_execution_evidence`: when it is true, escalate to a reviewer pane for execution verification instead of trusting the diff claim. Loop the review at most 2 rounds; parse `APPROVE` or `BLOCK` from the reviewer verdict each round, and register it. After a second `BLOCK`, stop and hand both positions to the user at a gate.
 
 8. **Report.** Print per-task status, report paths, the combined BLOCKED
    list, and a diff summary. Do not commit, push, open a PR, or transition
