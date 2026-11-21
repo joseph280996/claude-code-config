@@ -139,9 +139,11 @@ Register every parsed verdict token in the registry.
 3. **Gate: confirm dispatch.** Show the user the checklist and stop. Present the gate with the AskUserQuestion tool, in this pane, with 2-4 options; the user answers in the TUI. Dispatch
    only on their go.
 
-4. **Dispatch.** Unnamed background Agent spawns — no name parameter, one
-   per task, dispatched together (named spawns arrive as stripped,
-   read-only teammates). Prompt per worker stays exactly one line:
+4. **Dispatch.** Herdr pane workers when `HERDR_ENV=1` — one per pane,
+   following the pane lifecycle in `orchestrating-parallel-workers`
+   (unnamed background Agent spawns are the no-Herdr fallback; named
+   spawns arrive as stripped, read-only teammates). Prompt per worker
+   stays exactly one line:
    `Read /private/tmp/tasks/<run>/<task-id>.md and execute it. Your report path is in the file.`
    Task files live in `/private/tmp/tasks/<run>/`. Use a specialist agent
    instead of `worker` only when a task clearly fits one — the seven

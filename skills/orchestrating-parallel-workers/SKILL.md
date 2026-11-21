@@ -18,16 +18,18 @@ Four channels exist. Pick by who supervises and by what the worker needs.
 | Channel | Properties | Use it for |
 |---|---|---|
 | Named Agent spawns | In-process teammates; tools stripped to Grep, Glob, Skill, SendMessage, EnterWorktree, ExitWorktree; read-only; addressable while live | Investigation breadth; follow-up questions to a live reader |
-| Unnamed background Agent spawns | The agent file's full declared toolset; one-shot; not addressable after completion | The wave channel; matches the task-file contract |
+| Unnamed background Agent spawns | The agent file's full declared toolset; one-shot; not addressable after completion | Wave fallback when no panes can host workers |
 | herdr panes | Persistent, watchable, permission-isolated | Coordinator pane, investigator pane, reviewer-pane escalation, watch stages |
 | Workflow tool | Deterministic loop structure over read-only agents | Converge stage: brainstorm rounds plus advisor votes; loop-until-CLEAN with documented terminated rescuers. Schemas replace verdict-token prose wherever workflows run |
 
 Rules:
 
-- **The wave channel is unnamed background Agent spawns.** A named spawn
+- **The wave channel is herdr panes when `HERDR_ENV=1`** — one worker per
+  pane per pane lifecycle. Unnamed background Agent spawns are the fallback
+  when no Herdr session hosts the coordinator; they are unreliable for
+  writes (observed landing BLOCKED with stripped tools). A named spawn
   arrives as a stripped, read-only teammate — it cannot write task or
-  report files. Dispatch waves one subagent per task, together, no name
-  parameter.
+  report files.
 - **Only the coordinator spawns or closes panes** (the ONLY-ONE-spawner
   rule). Workers and subagents never touch herdr. The coordinator alone
   runs herdr commands.
@@ -55,7 +57,8 @@ Rules:
 
 ## Bootstrap smoke test
 
-Before wave 1, dispatch one trivial worker: run `git status` in the
+Before wave 1, dispatch one trivial worker in the same channel as the wave
+(a pane when panes are the default): run `git status` in the
 worktree and edit one file under `/private/tmp/tasks/<run>/` (the smoke
 report). Gate wave 1 on the smoke report file being present with a
 `done` result. A failed smoke run is a stop-and-diagnose event, not a
@@ -97,7 +100,7 @@ for workers). Resolve a pane by agent name while it is live; after a herdr
 restart, resolve by the `claude_session_id` stored in the run registry and
 re-adopt with `claude --resume`.
 
-1. Split: `herdr pane split --current --direction right --cwd "$PWD" --no-focus`; read `pane_id` from the response.
+1. Split: `herdr pane split --current --direction right --cwd "$PWD" --no-focus`; read `pane_id` from the response. Alternate directions across workers — first right, then down — to avoid un-navigable repeated same-direction splits.
 2. Start: `herdr agent start <run>-<role> --kind claude --pane <pane_id> -- --agent <role-file-name> --settings '{"permissions":{"deny":["Bash(git commit:*)","Bash(git push:*)","Bash(gh:*)","Bash(herdr:*)"],"defaultMode":"acceptEdits"}}'` for worker and investigator panes. Drop `--settings` only for genuinely read-only panes — explore and reviewer-subagent lanes. The investigator has Write, Agent, and Bash, so its pane gets the same deny blob as workers.
 3. Record name, `pane_id`, `claude_session_id`, and `transcript_path` in the run registry (`~/.claude/herdr-runs/<run>/state.md`).
 4. Prompt: `herdr agent prompt <name> "<one line>" --wait --timeout 120000`.

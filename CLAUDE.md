@@ -34,19 +34,29 @@ Technical English for about 80% of the content.
 
 ## Delegation
 
-Parallelize by default. Before executing a multi-step task, shape it as
-independent work: multiple `explore` subagents for codebase discovery, one
-task/todo file per parallel worker in `/private/tmp/tasks/` for builds, all
-dispatched together via the Agent tool. Confirm the parallel plan with the
-user before spawning workers that edit files.
+Parallelize by default. Before executing a multi-step task, shape work with
+one task file per worker in `/private/tmp/tasks/`; dispatch read-only
+discovery (explore, investigator) via the Agent tool and write/exec workers
+through herdr panes per `orchestrating-parallel-workers` when
+`HERDR_ENV=1`; only the session the user drives spawns panes — agents
+started with `herdr agent start` never spawn panes (ONLY-ONE-spawner). When
+`HERDR_ENV` is unset, unnamed Agent spawns are the fallback and are
+unreliable for writes. Confirm the parallel plan with the user before
+spawning workers that edit files.
 
 ## Subagent dispatch lanes
 
+- Route on capability: work that writes or runs commands goes to herdr
+  pane workers (`orchestrating-parallel-workers` pane lifecycle) when
+  `HERDR_ENV=1`; the Agent tool serves read-only lanes — explore,
+  investigator, code-reviewer, advisor, brainstorm, planner — and the
+  no-Herdr fallback for write/exec. Pane agents never spawn panes.
 - Name a spawned agent only for addressable, read-only follow-ups: named
   spawns become read-only teammates (Grep, Glob, Skill, SendMessage, worktree
   tools only) — no Read, Write, Edit, or Bash.
-- Spawn agents WITHOUT a name for work that writes or runs commands: unnamed
-  background spawns get their agent file's full declared toolset (frontmatter
+- Spawn agents WITHOUT a name as the no-Herdr fallback for work that writes
+  or runs commands: unnamed background spawns get their agent file's full
+  declared toolset (frontmatter
   honored; type allowlists are ignored in subagent files — bare `Agent`).
 - Agent definitions load at process start: agents/*.md edits do not affect
   running sessions or panes.
